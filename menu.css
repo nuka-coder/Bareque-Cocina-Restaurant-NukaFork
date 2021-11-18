@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: url(./Images/bg.svg);
+}
+
+/* Nav bar */
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+}
+
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    background-color: #121212;
+    justify-content: center;
+
+}
+
+.logo-container{
+    display: flex;
+    justify-content: flex-end;
+    flex: 2;
+}
+
+
+.logo{
+    width: 7rem;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(142deg) brightness(105%) contrast(100%);
+    
+}
+
+.toggle-container{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-container i{
+    color: #FFFFFF;
+    font-size: 2.5em;
+}
+
+.nav-bar{
+    width: 100%;
+    background-color: #121212;
+    z-index: -10;
+    transition: opacity 600ms, transform 500ms;
+}
+
+.nav-bar li{
+    list-style-type: none;
+    text-align: center;
+    padding: 1em;
+    color: #FFF;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-bar li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.filter-btn2{
+    list-style-type: none;
+    text-align: center;
+    padding: 1em;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.hidden {
+    position: fixed;
+    top: 80px;
+    opacity: 0;
+    transform: translateY(-250px);
+}
+
+.show{
+    transform: translateY(57px);
+    position: fixed;
+    top: 30px;
+    left: 0;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+
+
+.nav-bar li:hover{
+    background-color: #222;
+}
+
+/* Nav bar end*/
+
+
+/* Content */
+
+
+.filter-options{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+.filter-btn{
+    font-family: 'Book Antiqua', serif;
+    border: none;
+    border-radius: 4px;
+    background-color: #6B4A30;
+    color: #FFFFFF;
+    padding: 6px;
+    font-size: 1em;
+}
+
+.menu-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.menu-img-container img{
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #6B4A30 ;
+}
+
+.menu-img-container img{
+    width: 100%;
+    height: 18rem;
+}
+
+.category-text{
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px #6B4A30;
+    padding: 0.3em;
+    margin: 30px 20px 0px 20px;
+    text-align: center;
+    color: #6B4A30;
+    font-size: 1.5rem;
+}
+
+
+.item-info{
+    background-color: rgba(255, 255, 255, 0.9) ;
+    border: solid 3px #6B4A30;
+    margin: 30px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.division{
+    margin: 14px auto;
+    width: 80%;
+    border: solid 2px #6B4A30;
+}
+
+.item-title{
+    padding: 2px;
+    color: #6B4A30;
+    font-size: 1.7rem;
+}
+
+.item-description{
+    padding: 2px;
+    font-size: 1.2rem;
+    color: #6B4A30;
+}
+
+.item-price{
+    padding: 7px 2px 2px 2px;
+    font-size: 1.3rem;
+    color: #6B4A30;
+    font-weight: 700;
+}
+
+.food-sections{
+    margin-top: 40px;
+    margin-left: 1em;
+    width: fit-content;
+    text-align: justify;
+    color: #6B4A30;
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px #6B4A30;
+    padding: 4px;
+}
+
+.to-top-btn{
+    display: flex;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border: solid 2px #6B4A30;
+    border-radius: 50%;
+    transition: transform 400ms;
+}
+
+.to-top-btn i{
+    font-size: 1.2em;
+    color: #6B4A30;
+}
+
+.show-to-top {
+    transform: translateX(0px);
+}
+
+.hide-to-top {
+    transform: translateX(100px);
+}
+
+
