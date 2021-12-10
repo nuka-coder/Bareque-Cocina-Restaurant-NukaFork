@@ -15,6 +15,7 @@ toggleBtn.addEventListener('click', () => {
 // Filters
 
 const foodItems = document.querySelectorAll('.menu-item');
+const headingItems = document.querySelectorAll('.hd');
 const filterBtns = document.querySelectorAll('.filter-btn');
 
 
@@ -23,9 +24,19 @@ filterBtns.forEach(btn => btn.addEventListener('click', (e) => {
 
     const filterFood = e.target.dataset.filter;
     
+    // Delete/add the items
     foodItems.forEach((item)=>{
         if(item.dataset.filter == filterFood){
             item.style.display = "flex";
+        }else{
+            item.style.display = "none";
+        }
+    })
+
+    // Delete//add the headings
+    headingItems.forEach((item)=>{
+        if(item.dataset.filter == filterFood){
+            item.style.display = "block";
         }else{
             item.style.display = "none";
         }
@@ -41,6 +52,7 @@ filterBtns2.forEach(btn => btn.addEventListener('click', (e) => {
 
     const filterFood = e.target.dataset.filter;
     
+    //Delete items
     foodItems.forEach((item)=>{
         if(item.dataset.filter == filterFood){
             item.style.display = "flex";
@@ -48,6 +60,16 @@ filterBtns2.forEach(btn => btn.addEventListener('click', (e) => {
             item.style.display = "none";
         }
     })
+
+    //Delete headings
+    headingItems.forEach((item)=>{
+        if(item.dataset.filter == filterFood){
+            item.style.display = "block";
+        }else{
+            item.style.display = "none";
+        }
+    })
+
 }));
 
 // Scroll btn
@@ -71,3 +93,6 @@ topBtn.addEventListener('click', () =>{
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 })
+
+
+//Removes the show/hidden category of the navbar

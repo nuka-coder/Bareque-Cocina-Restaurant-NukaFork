@@ -3,11 +3,21 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-family: sans-serif;
 }
 
-body{
-    background: url(./Images/bg.svg);
+.whole-container{
+    position: relative;
 }
+.whole-container::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url(./Images/bg.svg);
+    filter: blur(0.7px);
+    z-index: -10;
+  }
 
 /* Nav bar */
 
@@ -31,11 +41,7 @@ body{
 
 }
 
-.logo-container{
-    display: flex;
-    justify-content: flex-end;
-    flex: 2;
-}
+
 
 
 .logo{
@@ -45,9 +51,10 @@ body{
 }
 
 .toggle-container{
-    display: flex;
-    flex: 1;
-    justify-content: center;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    margin-right: 1.5em;
     align-items: center;
 }
 
@@ -78,6 +85,7 @@ body{
 }
 
 .filter-btn2{
+    transition: transform 200ms;
     list-style-type: none;
     text-align: center;
     padding: 1em;
@@ -105,7 +113,7 @@ body{
 
 
 .nav-bar li:hover{
-    background-color: #222;
+    transform: scale(1.15);
 }
 
 /* Nav bar end*/
@@ -126,8 +134,10 @@ body{
     border-radius: 4px;
     background-color: #6B4A30;
     color: #FFFFFF;
-    padding: 6px;
-    font-size: 1em;
+    padding: 0.6em;
+    font-size: 0.85em;
+    transition: background 700ms,  transform 200ms;
+    cursor: pointer;
 }
 
 .menu-item{
@@ -139,14 +149,10 @@ body{
 
 
 .menu-img-container img{
-    width: 100%;
-    height: 100%;
-    border-bottom: 3px solid #6B4A30 ;
-}
-
-.menu-img-container img{
+    object-fit:contain;
     width: 100%;
     height: 18rem;
+    border-bottom: 3px solid #6B4A30 ;
 }
 
 .category-text{
@@ -196,8 +202,8 @@ body{
 }
 
 .food-sections{
-    margin-top: 40px;
-    margin-left: 1em;
+    
+    margin: 40px 0px 0px 1em;
     width: fit-content;
     text-align: justify;
     color: #6B4A30;
@@ -220,6 +226,11 @@ body{
     border: solid 2px #6B4A30;
     border-radius: 50%;
     transition: transform 400ms;
+    cursor: pointer;
+}
+
+.to-top-btn:hover{
+    transform: scale(1.1);
 }
 
 .to-top-btn i{
@@ -232,7 +243,180 @@ body{
 }
 
 .hide-to-top {
-    transform: translateX(100px);
+    transform: translateX(200px);
 }
 
+/* Footer */
+
+footer{
+    background-color: #000;
+    margin-top: 3em;
+}
+
+.footer-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo img{
+    width: 10rem;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(142deg) brightness(105%) contrast(100%);
+}
+
+.footer-info p{
+    padding: 1em;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.social-media{
+    color: #FFF;
+    padding: 1em;
+}
+
+.social-media h2{
+    text-align: center;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-icons i{
+    cursor: pointer;
+    font-size: 2em;
+    margin: 1em;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-icons a:active{
+    color: #FFF;
+}
+
+
+/* Media queries for tablet version */
+
+@media (min-width:600px){
+    .carnes-section, 
+    .panne-cooks-section,
+    .pasta-section, 
+    .bebidas-section,
+    .cervezas-section,
+    .cocteles-autor-section,
+    .cocteles-clasicos-section,
+    .postres-section, 
+    .entradas-section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+        grid-template-rows: auto;
+        
+        }
+    .item-info{
+        margin: 20px;
+    }
+
+    .filter-btn{
+        font-size: 1.3em;
+        padding: 10px;
+    }
+}
+
+/* Media queries for desktop version */
+
+@media (min-width: 1025px) {
+
+    .whole-container{
+        padding: 3em;
+    }
+    
+    .footer-info{
+        margin-left: 3em;
+    }
+
+    .hidden{
+        position: fixed;
+        z-index: 1000;
+        top: 80px;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    .nav-bar ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .toggle-container{
+        display: none;
+    }
+
+    .filter-btn{
+        margin-top: 3em;
+        font-size: 1.5em;
+    }
+
+    .carnes-section, 
+    .panne-cooks-section,
+    .pasta-section, 
+    .bebidas-section,
+    .cervezas-section,
+    .cocteles-autor-section,
+    .cocteles-clasicos-section,
+    .postres-section, 
+    .entradas-section{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 1fr;
+        grid-template-rows: auto;
+        
+        }
+
+    .filter-btn:hover{
+        transform: scale(1.1);
+        background-color: rgb(116, 89, 66);
+
+    }
+
+    .filter-btn2, .home-btn{
+        font-size: 1.2em;
+    }
+
+    .home-btn{
+    transition: transform 200ms;
+    }
+
+    .category-text{
+        font-size: 2.2em;
+        border: solid 5px #6B4A30;
+    }
+
+    .food-sections{
+        font-size: 2em;
+        border: solid 5px #6B4A30;
+
+    }
+    .division{
+        background-color: #6B4A30;
+    }
+
+    .logo{
+        width: 8rem;
+    }
+
+    .to-top-btn{
+        width: 80px;
+        height: 80px;
+    }
+
+    .to-top-btn i{
+        font-size: 2em;
+    }
+}
 

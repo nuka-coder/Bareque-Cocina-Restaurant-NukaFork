@@ -13,434 +13,472 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
-    <header class="header">
-        <div class="topnav">
-            <figure class="logo-container">
-                <img src="./Icons/rLSs6K01.svg" alt="Logo" class="logo">
-            </figure>
-            <figure class="toggle-container">
-                <i class="fas fa-bars"></i>
-            </figure>
-        </div>
-        <nav class="nav-bar hidden">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="filter-btn2" data-filter="entradas">Entradas</li>
-                <li class="filter-btn2" data-filter="plato-fuerte">Platos fuertes</li>
-                <li class="filter-btn2" data-filter="bebidas">Bebidas</li>
-                <li class="filter-btn2" data-filter="postres">Postres</li>
-            </ul>
-        </nav>
-    </header>
-        <div class="filter-options">
-            <button class="filter-btn" data-filter="entradas">Entradas</button>
-            <button class="filter-btn" data-filter="plato-fuerte">Platos fuertes</button>
-            <button class="filter-btn" data-filter="postres">Postres</button>
-            <button class="filter-btn" data-filter="bebidas">Bebidas</button>
-        </div>
+    <div class="whole-container">
+        <header class="header">
+            <div class="topnav">
+                <figure class="logo-container">
+                    <img src="./Icons/rLSs6K01.svg" alt="Logo" class="logo">
+                </figure>
+                <figure class="toggle-container">
+                    <i class="fas fa-bars"></i>
+                </figure>
+            </div>
+            <nav class="nav-bar hidden">
+                <ul>
+                    <li class="home-btn"><a href="index.html">Home</a></li>
+                    <li class="filter-btn2" data-filter="entradas">Entradas</li>
+                    <li class="filter-btn2" data-filter="plato-fuerte">Platos fuertes</li>
+                    <li class="filter-btn2" data-filter="bebidas">Bebidas</li>
+                    <li class="filter-btn2" data-filter="postres">Postres</li>
+                </ul>
+            </nav>
+        </header>
+            <div class="filter-options">
+                <button class="filter-btn" data-filter="entradas">Entradas</button>
+                <button class="filter-btn" data-filter="plato-fuerte">Platos fuertes</button>
+                <button class="filter-btn" data-filter="postres">Postres</button>
+                <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+            </div>
     <section class="menu-container">
-
-        <div class="to-top-btn hide-to-top">
-            <i class="fas fa-arrow-up"></i>
-        </div>
-        <!-- Entradas section--> 
-        <section class="entradas-section">
-            
-        <article class="menu-item" data-filter="entradas">
-            <h1 class="category-text" data-filter="entradas">Entradas</h1>
-            <hr class="division">
-            <div class="item-info">
-                <figure class="menu-img-container"> 
-                    <img src="./Images/patatas-ligues.jpg" alt="Patatas ligues">
-                </figure>
-                    <h3 class="item-title">Patatas Ligues</h3>
-                    <p class="item-description">Papa amarilla gratinada en cuatro quesos con tocineta</p>
-                    <p class="item-price">$20.000</p>
+    
+            <div class="to-top-btn hide-to-top">
+                <i class="fas fa-arrow-up"></i>
             </div>
-        </article>
-        <article class="menu-item" data-filter="entradas">
-            <div class="item-info">
-                <figure class="menu-img-container"> 
-                    <img src="./Images/patatas-bravas.jpg" alt="Patatas bravas">
-                </figure>
-                <h3 class="item-title">Patatas Bravas</h3>
-                <p class="item-description">Papa amarilla, pico de gallo salsa brava</p>
-                <p class="item-price">$18.000</p>
-            </div>
-        </article>
-        <article class="menu-item" data-filter="entradas">
-            <div class="item-info">
-                <figure class="menu-img-container"> 
-                    <img src="./Images/entrada-valluna.jpg" alt="Entrada Valluna">
-                </figure>
-                <h3 class="item-title">Valluna</h3>
-                <p class="item-description">Empanadas, aborrajados, marranitas</p>
-                <p class="item-price">$15.000</p>
-            </div>
-        </article>
-        </section>
-
-    <!-- Platos fuertes section -->
-
-    <section class="platos-fuertes-section">
-
+            <!-- Entradas section--> 
+            <h1 class="category-text hd" data-filter="entradas">Entradas</h1>
+            <hr class="division hd" data-filter="entradas">
+            <section class="entradas-section"> 
+            <article class="menu-item" data-filter="entradas">
+                
         
-    <article class="menu-item" data-filter="plato-fuerte" >
-        <h1 class="category-text" data-filter="plato-fuerte">Platos fuertes</h1>
-        <hr class="division">
-        <!-- Panne cooks-->
-        <h2 class="food-sections">Panne Cooks</h2>
-
-        <div class="item-info">
-            <figure class="menu-img-container"> 
-                <img src="./Images/pc-camarones.jpg" alt="Panne cook marinero">
-            </figure>
-                <h3 class="item-title">Marinero</h3>
-                <p class="item-description">Langostinos en salsa de la casa, champiñones, tocineta gratinada</p>
-                <p class="item-price">$30.000</p>
-        </div>
-    </article>
-    <article class="menu-item" data-filter="plato-fuerte">
-        <div class="item-info">
-            <figure class="menu-img-container"> 
-                <img src="./Images/pc-mixto.jpeg" alt="Panne cook mixto">
-            </figure>
-            <h3 class="item-title">Mixto</h3>
-            <p class="item-description">Pollo y carne en salsa de la casa, champiñones, tocineta gratinada</p>
-            <p class="item-price">$25.000</p>
-        </div>
-    </article>
-    <article class="menu-item" data-filter="plato-fuerte">
-        <div class="item-info">
-            <figure class="menu-img-container"> 
-                <img src="./Images/pc-carne.png" alt="Panne cook carne">
-            </figure>
-            <h3 class="item-title">Carne</h3>
-            <p class="item-description">carne en salsa de la casa, champiñones, tocineta gratinada</p>
-            <p class="item-price">$21.000</p>
-        </div>
-    </article>
-
-    <article class="menu-item" data-filter="plato-fuerte" >
-        <div class="item-info">
-            <figure class="menu-img-container"> 
-                <img src="./Images/pc-pollo.jpg" alt="Panne cook pollo">
-            </figure>
-            <h3 class="item-title">Pollo</h3>
-            <p class="item-description">Pollo en salsa de la casa, champiñones, tocineta gratinada</p>
-            <p class="item-price">$20.000</p>
-        </div>
-    </article>
-
-        <!-- Pasta -->
-    <article class="menu-item" data-filter="plato-fuerte" >
-        <h2 class="food-sections">Pasta (Spaghetti)</h2>
-
-        <div class="item-info">
-         <figure class="menu-img-container"> 
-             <img src="./Images/pasta-di-mare.jpeg" alt="Pasta Di Mare">
-         </figure>
-                <h3 class="item-title">Di Mare</h3>
-                <p class="item-description">Langostinos en salsa de la casa, champiñones, tocineta</p>
-                <p class="item-price">$30.000</p>
-        </div>
-    </article>
-
-    <article class="menu-item" data-filter="plato-fuerte">
-        <div class="item-info">
-            <figure class="menu-img-container"> 
-                <img src="./Images/pasta-bareque.jpg" alt="Pasta Bareque">
-            </figure>
-            <h3 class="item-title">Bareque</h3>
-            <p class="item-description">Pollo y carne en salsa de la casa, madurito, tocineta</p>
-            <p class="item-price">$27.000</p>
-        </div>
-    </article>
-    <article class="menu-item" data-filter="plato-fuerte">
-        <div class="item-info">
-            <figure class="menu-img-container"> 
-                <img src="./Images/pasta-carbonara.jpg" alt="Pasta Carbonara">
-            </figure>
-            <h3 class="item-title">Carbonara</h3>
-            <p class="item-description">Salsa de la casa, tocineta, pimienta, queso parmesano</p>
-            <p class="item-price">$26.000</p>
-        </div>
-    </article>
-
-        <!-- Carnes-->
-
-    <article class="menu-item" data-filter="plato-fuerte">    
-    <h2 class="food-sections">Carnes</h2>
-
-    <div class="item-info">
-        <figure class="menu-img-container"> 
-            <img src="./Images/costilla.jpg" alt="CostillaBBQ">
-        </figure>
-            <h3 class="item-title">Recomendación del chef</h3>
-            <p class="item-description">Costilla especial en cocción lenta con BBQ de la casa, acompañado de arroz almendrado, ensalada tropical</p>
-            <p class="item-price">$35.000</p>
-    </div>
-    </article>
-    <article class="menu-item" data-filter="plato-fuerte">
-        <div class="item-info">
-            <figure class="menu-img-container"> 
-                <img src="./Images/salmon.jpg" alt="Salmón">
-            </figure>
-            <h3 class="item-title">Salmón</h3>
-            <p class="item-description">Filete de salmón con reducción de frutos amarillos, acompañado de pure de papa y ensalada tropical</p>
-            <p class="item-price">$45.000</p>
-        </div>
-    </article>
-
-  </section>
-  <!-- Bebidas section -->
-
-  <section class="bebidas-section">
-    <!-- Bebidas -->
-    <article class="menu-item" data-filter="bebidas">
-    <h1 class="category-text" data-filter="bebidas">Bebidas</h1>
-    <hr class="division">
-    <h2 class="food-sections">Bebidas</h2>
-
-     <div class="item-info">
-         <figure class="menu-img-container"> 
-            <img src="./Images/limonada-natural.jpg" alt="Limonada natural">
-         </figure>
-               <h3 class="item-title">Limonada natural</h3>
-               <p class="item-description"></p>
-               <p class="item-price">$8.000</p>
-        </div>
-    </article>
-
-    <article class="menu-item" data-filter="bebidas">
-        <div class="item-info">
-            <figure class="menu-img-container"> 
-                <img src="./Images/limonada-coco.jpg" alt="Limonada de coco">
-            </figure>
-            <h3 class="item-title">Limonada de coco</h3>
-            <p class="item-description"></p>
-            <p class="item-price">$15.000</p>
-        </div>
-    </article>
-
-    <article class="menu-item" data-filter="bebidas">
-        <div class="item-info">
-            <figure class="menu-img-container"> 
-                <img src="./Images/limonada-mango-biche.jpg" alt="Limonada de mango biche">
-            </figure>
-            <h3 class="item-title">Limonada de mango biche</h3>
-            <p class="item-description"></p>
-            <p class="item-price">$12.000</p>
-        </div>
-    </article>
-    <article class="menu-item" data-filter="bebidas">
-        <div class="item-info">
-            <figure class="menu-img-container"> 
-                <img src="./Images/gaseosa.jpg" alt="Gaseosa">
-            </figure>
-            <h3 class="item-title">Gaseosas</h3>
-            <p class="item-description">Coca cola, Coca cola zero, Pepsi, Manzana, Colombiana</p>
-            <p class="item-price">$5.000</p>
-        </div>
-    </article>
-
-    <article class="menu-item" data-filter="bebidas">
-        <div class="item-info">
-            <figure class="menu-img-container"> 
-                <img src="./Images/soda.jpg" alt="Soda">
-            </figure>
-            <h3 class="item-title">Soda</h3>
-            <p class="item-description"></p>
-            <p class="item-price">$5.000</p>
-        </div>
-    </article>
-
-    <article class="menu-item" data-filter="bebidas">
-        <div class="item-info">
-            <figure class="menu-img-container"> 
-                <img src="./Images/botella-agua.jpg" alt="Botella con agua">
-            </figure>
-            <h3 class="item-title">Botella con agua</h3>
-            <p class="item-description"></p>
-            <p class="item-price">$4.000</p>
-        </div>
-    </article>
-
-    <!-- Cerveza -->
-
-    <article class="menu-item" data-filter="bebidas">
-        <h2 class="food-sections">Cervezas</h2>
-         <div class="item-info">
-             <figure class="menu-img-container"> 
-                <img src="./Images/corona.jpg" alt="Cerveza Corona">
-             </figure>
-                   <h3 class="item-title">Corona</h3>
-                   <p class="item-description"></p>
-                   <p class="item-price">$10.000</p>
-            </div>
-        </article>
+                    <div class="item-info">
+                        <figure class="menu-img-container"> 
+                            <img src="./Images/patatas-ligues.jpg" alt="Patatas ligues">
+                        </figure>
+                            <h3 class="item-title">Patatas Bareque</h3>
+                            <p class="item-description">Papa amarilla gratinada en cuatro quesos con tocineta</p>
+                            <p class="item-price">$20.000</p>
+                    </div>
+                </article>
+                <article class="menu-item" data-filter="entradas">
+                    <div class="item-info">
+                        <figure class="menu-img-container"> 
+                            <img src="./Images/patatas-bravas.jpg" alt="Patatas bravas">
+                        </figure>
+                        <h3 class="item-title">Patatas Bravas</h3>
+                        <p class="item-description">Papa amarilla, pico de gallo salsa brava</p>
+                        <p class="item-price">$18.000</p>
+                    </div>
+                </article>
+                <article class="menu-item" data-filter="entradas">
+                    <div class="item-info">
+                        <figure class="menu-img-container"> 
+                            <img src="./Images/entrada-valluna.jpg" alt="Entrada Valluna">
+                        </figure>
+                        <h3 class="item-title">Valluna</h3>
+                        <p class="item-description">Empanadas, aborrajados, marranitas</p>
+                        <p class="item-price">$15.000</p>
+                    </div>
+                </article>
     
-    <article class="menu-item" data-filter="bebidas">
-         <div class="item-info">
-             <figure class="menu-img-container"> 
-                <img src="./Images/club-colombia.jpg" alt="Cerveza Club Colombia">
-             </figure>
-                   <h3 class="item-title">Club Colombia</h3>
-                   <p class="item-description"></p>
-                   <p class="item-price">$6.000</p>
-            </div>
-        </article>
-
-    <article class="menu-item" data-filter="bebidas">
-         <div class="item-info">
-             <figure class="menu-img-container"> 
-                <img src="./Images/budweiser.jpg" alt="Cerveza Budweiser">
-             </figure>
-                   <h3 class="item-title">Budweiser</h3>
-                   <p class="item-description"></p>
-                   <p class="item-price">$6.000</p>
-            </div>
-        </article>      
+        </section>
     
-        <!-- Cocteles -->
-        <!-- De autor-->
-
-    <article class="menu-item" data-filter="bebidas">
-        <h2 class="food-sections">Cocteles de autor</h2>
-         <div class="item-info">
-             <figure class="menu-img-container"> 
-                <img src="./Images/coctel-calenisimo.jpg" alt="Coctel Caleñisimo">
-             </figure>
-                   <h3 class="item-title">Caleñisimo</h3>
-                   <p class="item-description">Tequila, triple sec, lulo, ají en hojuelas</p>
-                   <p class="item-price">$30.000</p>
-            </div>
-        </article>
+        <!-- Platos fuertes section -->
     
-    <article class="menu-item" data-filter="bebidas">
-         <div class="item-info">
-             <figure class="menu-img-container"> 
-                <img src="./Images/coctel-jovita.jpg" alt="Coctel Jovita">
-             </figure>
-                   <h3 class="item-title">Jovita</h3>
-                   <p class="item-description">Ginebra, limón, triple sec, base roja de la casa</p>
-                   <p class="item-price">$30.000</p>
-            </div>
-        </article>
-
-    <article class="menu-item" data-filter="bebidas">
-         <div class="item-info">
-             <figure class="menu-img-container"> 
-                <img src="./Images/coctel-tropical.jpeg" alt="Coctel Tropical">
-             </figure>
-                   <h3 class="item-title">Tropical</h3>
-                   <p class="item-description">Aguardiente, almibar manzana verde, limon, soda</p>
-                   <p class="item-price">$30.000</p>
-            </div>
-        </article>      
-  </section>
-  <!-- Cocteles clasicos -->
-
-    <article class="menu-item" data-filter="bebidas">
-        <h2 class="food-sections">Cocteles clasicos</h2>
-         <div class="item-info">
-             <figure class="menu-img-container"> 
-                <img src="./Images/coctel-margarita.jpg" alt="Coctel Margarita">
-             </figure>
-                   <h3 class="item-title">Margarita</h3>
-                   <p class="item-description">Tequila, triple sec, limón</p>
-                   <p class="item-price">$25.000</p>
-            </div>
-        </article>
+        <h1 class="category-text hd" data-filter="plato-fuerte">Platos fuertes</h1>
+        <hr class="division hd" data-filter="plato-fuerte">
+        <h2 class="food-sections hd" data-filter="plato-fuerte">Panne Cooks</h2>
     
-    <article class="menu-item" data-filter="bebidas">
-         <div class="item-info">
-             <figure class="menu-img-container"> 
-                <img src="./Images/coctel-gin-tonic.jpg" alt="Coctel Gin and Tonic">
-             </figure>
-                   <h3 class="item-title">Gin and Tonic</h3>
-                   <p class="item-description">Ginebra, tónica, limón, naranja, especias</p>
-                   <p class="item-price">$25.000</p>
-            </div>
-        </article>
-
-    <article class="menu-item" data-filter="bebidas">
-         <div class="item-info">
-             <figure class="menu-img-container"> 
-                <img src="./Images/coctel-good-father.jpg" alt="Coctel Good Father">
-             </figure>
-                   <h3 class="item-title">Good Father</h3>
-                   <p class="item-description">Whisky, amaretto, cereza, naranja</p>
-                   <p class="item-price">$25.000</p>
-            </div>
-        </article>
-
-    <article class="menu-item" data-filter="bebidas">
-         <div class="item-info">
-             <figure class="menu-img-container"> 
-                <img src="./Images/mojito.jpg" alt="Coctel Mojito">
-             </figure>
-                   <h3 class="item-title">Mojito</h3>
-                   <p class="item-description">Ron, zumo de limón, hierbabuena, soda</p>
-                   <p class="item-price">$25.000</p>
-            </div>
-        </article> 
-
-    <article class="menu-item" data-filter="bebidas">
-         <div class="item-info">
-             <figure class="menu-img-container"> 
-                <img src="./Images/coctel-laguna-azul.jpg" alt="Coctel Laguna azul">
-             </figure>
-                   <h3 class="item-title">Laguna azul</h3>
-                   <p class="item-description">Vodka, limón,naranja, triple sec, soda</p>
-                   <p class="item-price">$25.000</p>
-            </div>
-        </article>       
-  </section>
-  <section class="postres-section">
-            <!-- Postres section -->
-    <article class="menu-item" data-filter="postres">
-        <h1 class="category-text" data-filter="postres">Postres</h1>
-        <hr class="division">
-        <div class="item-info">
-            <figure class="menu-img-container"> 
-                <img src="./Images/postre-brownie-helado.jpg" alt="Brownie con helado">
-            </figure>
-                <h3 class="item-title">Brownie con helado</h3>
-                <p class="item-description">Brownie horneado con helado cremoso de vainilla</p>
-                <p class="item-price">$10.000</p>
-        </div>
-    </article>
-    <article class="menu-item" data-filter="postres">
-        <div class="item-info">
-            <figure class="menu-img-container"> 
-                <img src="./Images/postre-cheesecake.jpg" alt="Cheesecake">
-            </figure>
-            <h3 class="item-title">Cheesecake</h3>
-            <p class="item-description">Delicioso postre hecho a base crema y queso</p>
-            <p class="item-price">$15.000</p>
-        </div>
-    </article>
-    <article class="menu-item" data-filter="postres">
-        <div class="item-info">
-            <figure class="menu-img-container"> 
-                <img src="./Images/postre-cortado.jpg" alt="Cortado">
-            </figure>
-            <h3 class="item-title">Dulce Cortado</h3>
-            <p class="item-description">Dulce casero hecho por un artesano</p>
-            <p class="item-price">$15.000</p>
-        </div>
-    </article>
+    
+        <section class="panne-cooks-section">
+            <article class="menu-item" data-filter="plato-fuerte" >
+                
+                <!-- Panne cooks-->
+                    <div class="item-info">
+                        <figure class="menu-img-container"> 
+                            <img src="./Images/pc-camarones.jpg" alt="Panne cook marinero">
+                        </figure>
+                            <h3 class="item-title">Marinero</h3>
+                            <p class="item-description">Langostinos en salsa de la casa, champiñones, tocineta gratinada</p>
+                            <p class="item-price">$30.000</p>
+                    </div>
+                </article>
+                <article class="menu-item" data-filter="plato-fuerte">
+                    <div class="item-info">
+                        <figure class="menu-img-container"> 
+                            <img src="./Images/pc-mixto.jpeg" alt="Panne cook mixto">
+                        </figure>
+                        <h3 class="item-title">Mixto</h3>
+                        <p class="item-description">Pollo y carne en salsa de la casa, champiñones, tocineta gratinada</p>
+                        <p class="item-price">$25.000</p>
+                    </div>
+                </article>
+                <article class="menu-item" data-filter="plato-fuerte">
+                    <div class="item-info">
+                        <figure class="menu-img-container"> 
+                            <img src="./Images/pc-carne.png" alt="Panne cook carne">
+                        </figure>
+                        <h3 class="item-title">Carne</h3>
+                        <p class="item-description">Carne en salsa de la casa, champiñones, tocineta gratinada</p>
+                        <p class="item-price">$21.000</p>
+                    </div>
+                </article>
+            
+                <article class="menu-item" data-filter="plato-fuerte" >
+                    <div class="item-info">
+                        <figure class="menu-img-container"> 
+                            <img src="./Images/pc-pollo.jpg" alt="Panne cook pollo">
+                        </figure>
+                        <h3 class="item-title">Pollo</h3>
+                        <p class="item-description">Pollo en salsa de la casa, champiñones, tocineta gratinada</p>
+                        <p class="item-price">$20.000</p>
+                    </div>
+                </article>
+            </section>
+    
+                    <!-- Pasta -->
+                <h2 class="food-sections hd" data-filter="plato-fuerte">Pasta (Spaghetti)</h2>
+                <section class="pasta-section">
+                    <article class="menu-item" data-filter="plato-fuerte" >
+                        <div class="item-info">
+                        <figure class="menu-img-container"> 
+                            <img src="./Images/pasta-di-mare.jpeg" alt="Pasta Di Mare">
+                        </figure>
+                                <h3 class="item-title">Di Mare</h3>
+                                <p class="item-description">Langostinos en salsa de la casa, champiñones, tocineta</p>
+                                <p class="item-price">$30.000</p>
+                        </div>
+                    </article>
+        
+                    <article class="menu-item" data-filter="plato-fuerte">
+                        <div class="item-info">
+                            <figure class="menu-img-container"> 
+                                <img src="./Images/pasta-bareque.jpg" alt="Pasta Bareque">
+                            </figure>
+                            <h3 class="item-title">Bareque</h3>
+                            <p class="item-description">Pollo y carne en salsa de la casa, madurito, tocineta</p>
+                            <p class="item-price">$27.000</p>
+                        </div>
+                    </article>
+                    <article class="menu-item" data-filter="plato-fuerte">
+                        <div class="item-info">
+                            <figure class="menu-img-container"> 
+                                <img src="./Images/pasta-carbonara.jpg" alt="Pasta Carbonara">
+                            </figure>
+                            <h3 class="item-title">Carbonara</h3>
+                            <p class="item-description">Salsa de la casa, tocineta, pimienta, queso parmesano</p>
+                            <p class="item-price">$26.000</p>
+                        </div>
+                    </article>
+                </section>
+    
+                    <!-- Carnes-->
+    
+            <h2 class="food-sections hd" data-filter="plato-fuerte">Recomendaciones del chef</h2>
+            <section class="carnes-section">
+                <article class="menu-item" data-filter="plato-fuerte">    
+                    <div class="item-info">
+                        <figure class="menu-img-container"> 
+                            <img src="./Images/costilla.jpg" alt="CostillaBBQ">
+                        </figure>
+                            <h3 class="item-title">Costilla especial</h3>
+                            <p class="item-description">Costilla especial en cocción lenta con BBQ de la casa, acompañado de arroz almendrado, ensalada tropical</p>
+                            <p class="item-price">$35.000</p>
+                    </div>
+                    </article>
+                    <article class="menu-item" data-filter="plato-fuerte">
+                        <div class="item-info">
+                            <figure class="menu-img-container"> 
+                                <img src="./Images/salmon.jpg" alt="Salmón">
+                            </figure>
+                            <h3 class="item-title">Salmón</h3>
+                            <p class="item-description">Filete de salmón con reducción de frutos amarillos, acompañado de pure de papa y ensalada tropical</p>
+                            <p class="item-price">$45.000</p>
+                        </div>
+                    </article>
+                </section>
+    
+        </section>
+           
+      <!-- Bebidas section -->
+      <h1 class="category-text hd" data-filter="bebidas">Bebidas</h1>
+      <hr class="division hd" data-filter="bebidas">
+      <h2 class="food-sections hd" data-filter="bebidas">Bebidas</h2>
+    
+      <section class="bebidas-section">
+    
+        <article class="menu-item" data-filter="bebidas">    
+             <div class="item-info">
+                 <figure class="menu-img-container"> 
+                    <img src="./Images/limonada-natural.jpg" alt="Limonada natural">
+                 </figure>
+                       <h3 class="item-title">Limonada natural</h3>
+                       <p class="item-description"></p>
+                       <p class="item-price">$8.000</p>
+                </div>
+            </article>
+        
+            <article class="menu-item" data-filter="bebidas">
+                <div class="item-info">
+                    <figure class="menu-img-container"> 
+                        <img src="./Images/limonada-coco.jpg" alt="Limonada de coco">
+                    </figure>
+                    <h3 class="item-title">Limonada de coco</h3>
+                    <p class="item-description"></p>
+                    <p class="item-price">$15.000</p>
+                </div>
+            </article>
+        
+            <article class="menu-item" data-filter="bebidas">
+                <div class="item-info">
+                    <figure class="menu-img-container"> 
+                        <img src="./Images/limonada-mango-biche.jpg" alt="Limonada de mango biche">
+                    </figure>
+                    <h3 class="item-title">Limonada de mango biche</h3>
+                    <p class="item-description"></p>
+                    <p class="item-price">$12.000</p>
+                </div>
+            </article>
+            <article class="menu-item" data-filter="bebidas">
+                <div class="item-info">
+                    <figure class="menu-img-container"> 
+                        <img src="./Images/gaseosa.jpg" alt="Gaseosa">
+                    </figure>
+                    <h3 class="item-title">Gaseosas</h3>
+                    <p class="item-description">Coca cola, Pepsi, Manzana, Colombiana</p>
+                    <p class="item-price">$5.000</p>
+                </div>
+            </article>
+        
+            <article class="menu-item" data-filter="bebidas">
+                <div class="item-info">
+                    <figure class="menu-img-container"> 
+                        <img src="./Images/soda.jpg" alt="Soda">
+                    </figure>
+                    <h3 class="item-title">Soda</h3>
+                    <p class="item-description"></p>
+                    <p class="item-price">$5.000</p>
+                </div>
+            </article>
+        
+            <article class="menu-item" data-filter="bebidas">
+                <div class="item-info">
+                    <figure class="menu-img-container"> 
+                        <img src="./Images/botella-agua.jpg" alt="Botella con agua">
+                    </figure>
+                    <h3 class="item-title">Botella con agua</h3>
+                    <p class="item-description"></p>
+                    <p class="item-price">$4.000</p>
+                </div>
+            </article> 
+        </section>
+        <!-- Bebidas -->
+    
+    
+        <!-- Cerveza -->
+        <h2 class="food-sections hd" data-filter="bebidas">Cervezas</h2>
+        <section class="cervezas-section">
+            <article class="menu-item" data-filter="bebidas">
+                
+                 <div class="item-info">
+                     <figure class="menu-img-container"> 
+                        <img src="./Images/corona.jpg" alt="Cerveza Corona">
+                     </figure>
+                           <h3 class="item-title">Corona</h3>
+                           <p class="item-description"></p>
+                           <p class="item-price">$10.000</p>
+                    </div>
+                </article>
+            
+            <article class="menu-item" data-filter="bebidas">
+                 <div class="item-info">
+                     <figure class="menu-img-container"> 
+                        <img src="./Images/club-colombia.jpg" alt="Cerveza Club Colombia">
+                     </figure>
+                           <h3 class="item-title">Club Colombia</h3>
+                           <p class="item-description"></p>
+                           <p class="item-price">$6.000</p>
+                    </div>
+                </article>
+        
+            <article class="menu-item" data-filter="bebidas">
+                 <div class="item-info">
+                     <figure class="menu-img-container"> 
+                        <img src="./Images/budweiser.jpg" alt="Cerveza Budweiser">
+                     </figure>
+                           <h3 class="item-title">Budweiser</h3>
+                           <p class="item-description"></p>
+                           <p class="item-price">$6.000</p>
+                    </div>
+                </article>      
+        </section>
+    
+        
+            <!-- Cocteles -->
+            <!-- De autor-->
+        <h1 class="category-text hd" data-filter="bebidas">Cocteles</h1>
+        <hr class="division hd" data-filter="bebidas">
+        <h2 class="food-sections hd" data-filter="bebidas">Cocteles de autor</h2>
+        <section class="cocteles-autor-section">
+            <article class="menu-item" data-filter="bebidas">
+                 <div class="item-info">
+                     <figure class="menu-img-container"> 
+                        <img src="./Images/coctel-calenisimo.jpg" alt="Coctel Caleñisimo">
+                     </figure>
+                           <h3 class="item-title">Caleñisimo</h3>
+                           <p class="item-description">Tequila, triple sec, lulo, ají en hojuelas</p>
+                           <p class="item-price">$30.000</p>
+                    </div>
+                </article>
+            
+            <article class="menu-item" data-filter="bebidas">
+                 <div class="item-info">
+                     <figure class="menu-img-container"> 
+                        <img src="./Images/coctel-jovita.jpg" alt="Coctel Jovita">
+                     </figure>
+                           <h3 class="item-title">Jovita</h3>
+                           <p class="item-description">Ginebra, limón, triple sec, base roja de la casa</p>
+                           <p class="item-price">$30.000</p>
+                    </div>
+                </article>
+        
+            <article class="menu-item" data-filter="bebidas">
+                 <div class="item-info">
+                     <figure class="menu-img-container"> 
+                        <img src="./Images/coctel-tropical.jpeg" alt="Coctel Tropical">
+                     </figure>
+                           <h3 class="item-title">Tropical</h3>
+                           <p class="item-description">Aguardiente, almibar manzana verde, limon, soda</p>
+                           <p class="item-price">$30.000</p>
+                    </div>
+                </article>      
+        </section> 
+      <!-- Cocteles clasicos -->
+    
+      <h2 class="food-sections hd" data-filter="bebidas">Cocteles clasicos</h2>
+      <section class="cocteles-clasicos-section">
+        <article class="menu-item" data-filter="bebidas">
+            
+             <div class="item-info">
+                 <figure class="menu-img-container"> 
+                    <img src="./Images/coctel-margarita.jpg" alt="Coctel Margarita">
+                 </figure>
+                       <h3 class="item-title">Margarita</h3>
+                       <p class="item-description">Tequila, triple sec, limón</p>
+                       <p class="item-price">$25.000</p>
+                </div>
+            </article>
+        
+        <article class="menu-item" data-filter="bebidas">
+             <div class="item-info">
+                 <figure class="menu-img-container"> 
+                    <img src="./Images/coctel-gin-tonic.jpg" alt="Coctel Gin and Tonic">
+                 </figure>
+                       <h3 class="item-title">Gin and Tonic</h3>
+                       <p class="item-description">Ginebra, tónica, limón, naranja, especias</p>
+                       <p class="item-price">$25.000</p>
+                </div>
+            </article>
+    
+        <article class="menu-item" data-filter="bebidas">
+             <div class="item-info">
+                 <figure class="menu-img-container"> 
+                    <img src="./Images/coctel-good-father.jpg" alt="Coctel Good Father">
+                 </figure>
+                       <h3 class="item-title">Good Father</h3>
+                       <p class="item-description">Whisky, amaretto, cereza, naranja</p>
+                       <p class="item-price">$25.000</p>
+                </div>
+            </article>
+    
+        <article class="menu-item" data-filter="bebidas">
+             <div class="item-info">
+                 <figure class="menu-img-container"> 
+                    <img src="./Images/mojito.jpg" alt="Coctel Mojito">
+                 </figure>
+                       <h3 class="item-title">Mojito</h3>
+                       <p class="item-description">Ron, zumo de limón, hierbabuena, soda</p>
+                       <p class="item-price">$25.000</p>
+                </div>
+            </article> 
+    
+        <article class="menu-item" data-filter="bebidas">
+             <div class="item-info">
+                 <figure class="menu-img-container"> 
+                    <img src="./Images/coctel-laguna-azul.jpg" alt="Coctel Laguna azul">
+                 </figure>
+                       <h3 class="item-title">Laguna azul</h3>
+                       <p class="item-description">Vodka, limón,naranja, triple sec, soda</p>
+                       <p class="item-price">$25.000</p>
+                </div>
+            </article>       
+      </section>
+                <!-- Postres section -->
+        <h1 class="category-text hd" data-filter="postres">Postres</h1>
+        <hr class="division hd" data-filter="postres">  
+        <section class="postres-section">  
+            <article class="menu-item" data-filter="postres">    
+                    <div class="item-info">
+                        <figure class="menu-img-container"> 
+                            <img src="./Images/postre-brownie-helado.jpg" alt="Brownie con helado">
+                        </figure>
+                            <h3 class="item-title">Brownie con helado</h3>
+                            <p class="item-description">Brownie horneado con helado cremoso de vainilla</p>
+                            <p class="item-price">$10.000</p>
+                </div>
+            </article>
+            <article class="menu-item" data-filter="postres">
+                <div class="item-info">
+                    <figure class="menu-img-container"> 
+                        <img src="./Images/postre-cheesecake.jpg" alt="Cheesecake">
+                    </figure>
+                    <h3 class="item-title">Cheesecake</h3>
+                    <p class="item-description">Delicioso postre hecho a base crema y queso</p>
+                    <p class="item-price">$15.000</p>
+                </div>
+            </article>
+            <article class="menu-item" data-filter="postres">
+                <div class="item-info">
+                    <figure class="menu-img-container"> 
+                        <img src="./Images/postre-cortado.jpg" alt="Cortado">
+                    </figure>
+                    <h3 class="item-title">Dulce Cortado</h3>
+                    <p class="item-description">Dulce casero hecho por un artesano</p>
+                    <p class="item-price">$15.000</p>
+                </div>
+            </article> 
+    </section>
+    
+        </section>
+    
+    </section>
+    </section>
+    
+</div>
+<footer>
+    <figure class="footer-logo">
+        <img src="./Icons/rLSs6K01.svg" alt="Bareque logo">
+    </figure>
+    <section class="footer-info">
+        <p>© 2021 Bareque Cocina. All rights reserved.</p>
+        <p>Cali - Valle del cauca - Colombia</p>
+        <p>Horarios de atención: Jueves a Domingo 6:00PM - 1:00 AM</p>
     </section>
 
+    <section class="social-media">
+        <h2>Contacto</h2>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/barequecali/" target="_BLANK"><i class="fab fa-instagram"></i></a>
+            <a href="tel:+57.315.558.S8225"><i class="fas fa-phone"></i></a>
+            <a href="mailto:barequecali@gmail.com" target="_BLANK"><i class="far fa-envelope"></i></a>
+        </div>
+    </section>
+</footer>
 
-</section>
-
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-    AOS.init();
-    </script>
     <script src="menuApp.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
 </body>
 </html>
