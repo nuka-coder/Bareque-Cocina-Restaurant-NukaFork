@@ -1,3 +1,5 @@
+
+
 // Functionality of the navbar
 const toggleBtn = document.querySelector('.toggle-container');
 const navBar = document.querySelector('.nav-bar');
@@ -41,36 +43,11 @@ filterBtns.forEach(btn => btn.addEventListener('click', (e) => {
             item.style.display = "none";
         }
     })
-}));
-
-
-const filterBtns2 = document.querySelectorAll('.filter-btn2');
-
-
-filterBtns2.forEach(btn => btn.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    const filterFood = e.target.dataset.filter;
-    
-    //Delete items
-    foodItems.forEach((item)=>{
-        if(item.dataset.filter == filterFood){
-            item.style.display = "flex";
-        }else{
-            item.style.display = "none";
-        }
-    })
-
-    //Delete headings
-    headingItems.forEach((item)=>{
-        if(item.dataset.filter == filterFood){
-            item.style.display = "block";
-        }else{
-            item.style.display = "none";
-        }
-    })
+    window.scrollTo(0,4) // Elements appear when user clicks a filter, without a little scroll the user won't see anything.
 
 }));
+
+
 
 // Scroll btn
 
@@ -94,5 +71,24 @@ topBtn.addEventListener('click', () =>{
     document.documentElement.scrollTop = 0;
 })
 
+// Scroll reveal functionality
 
-//Removes the show/hidden category of the navbar
+window.scrollTo(0,2)
+
+
+window.addEventListener('scroll', ()=>{
+    let content = document.querySelectorAll('.menu-item');
+
+    content.forEach(content => {
+        let contentPosition = content.getBoundingClientRect().top;
+        let screenPosition = window.innerHeight / 0.8;
+    
+        if(contentPosition < screenPosition){
+            content.classList.add('active');
+        }else{
+            content.classList.remove('active');
+        }
+    })
+})
+
+
