@@ -1,3 +1,5 @@
+
+
 // Functionality of the navbar
 const toggleBtn = document.querySelector('.toggle-container');
 const navBar = document.querySelector('.nav-bar');
@@ -15,6 +17,7 @@ toggleBtn.addEventListener('click', () => {
 // Filters
 
 const foodItems = document.querySelectorAll('.menu-item');
+const headingItems = document.querySelectorAll('.hd');
 const filterBtns = document.querySelectorAll('.filter-btn');
 
 
@@ -23,6 +26,7 @@ filterBtns.forEach(btn => btn.addEventListener('click', (e) => {
 
     const filterFood = e.target.dataset.filter;
     
+    // Delete/add the items
     foodItems.forEach((item)=>{
         if(item.dataset.filter == filterFood){
             item.style.display = "flex";
@@ -30,25 +34,20 @@ filterBtns.forEach(btn => btn.addEventListener('click', (e) => {
             item.style.display = "none";
         }
     })
-}));
 
-
-const filterBtns2 = document.querySelectorAll('.filter-btn2');
-
-
-filterBtns2.forEach(btn => btn.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    const filterFood = e.target.dataset.filter;
-    
-    foodItems.forEach((item)=>{
+    // Delete//add the headings
+    headingItems.forEach((item)=>{
         if(item.dataset.filter == filterFood){
-            item.style.display = "flex";
+            item.style.display = "block";
         }else{
             item.style.display = "none";
         }
     })
+    window.scrollTo(0,4) // Elements appear when user clicks a filter, without a little scroll the user won't see anything.
+
 }));
+
+
 
 // Scroll btn
 
@@ -71,3 +70,25 @@ topBtn.addEventListener('click', () =>{
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 })
+
+// Scroll reveal functionality
+
+window.scrollTo(0,2)
+
+
+window.addEventListener('scroll', ()=>{
+    let content = document.querySelectorAll('.menu-item');
+
+    content.forEach(content => {
+        let contentPosition = content.getBoundingClientRect().top;
+        let screenPosition = window.innerHeight / 0.8;
+    
+        if(contentPosition < screenPosition){
+            content.classList.add('active');
+        }else{
+            content.classList.remove('active');
+        }
+    })
+})
+
+
