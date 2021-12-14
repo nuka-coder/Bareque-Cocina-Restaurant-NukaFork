@@ -67,8 +67,12 @@ function scrollFunction() {
 
 
 topBtn.addEventListener('click', () =>{
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+
+    //This way support all browsers (IE not include)
+    window.scrollTo({
+        top: 20,
+        behavior: 'smooth'
+    })
 })
 
 // Scroll reveal functionality
@@ -90,5 +94,4 @@ window.addEventListener('scroll', ()=>{
         }
     })
 })
-
 
