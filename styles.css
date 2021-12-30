@@ -1,0 +1,750 @@
+/* CSS Variables */
+:root {
+  --black: #000;
+  --white: #fff;
+  /* --goldenbrown: #5D492C; */
+  --lightbrown: #BBA484;
+  /* --gold: #c7b324; */
+}
+/* Global Styling */
+body {
+  background-color: var(--black);
+  margin: 0;
+}
+a {
+  font-family: Merriweather, serif;
+  font-size: 1.75rem;
+  text-decoration: none;
+}
+p {
+  font-family: 'Oswald', serif;
+}
+h1 {
+  color: var(--white);
+  font-family: Book Antiqua, serif;
+  font-size: 3rem;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin: 5px 0;
+}
+h6 {
+  display: inline-block;
+}
+/*Repeated Color Stylings */
+.menu-icons,
+.nav,
+.nav-links,
+.footer {
+  background-color: var(--black);
+}
+.menu-icon-1,
+.menu-icon-2,
+.footer {
+  color: var(--white);
+}
+.utensils-border-icon {
+    color: var(--lightbrown);
+}
+
+/* Repeated Structure Styling */
+.landing-section,
+.mobile-menu-section,
+.contact-mobile-section,
+.location-mobile-section,
+.reservations-mobile-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.paragraph-text {
+  color: var(--white);
+}
+/* Card Styling for Desktop Cards (text, headings, and page link) */
+.card-links {
+  color: var(--lightbrown);
+  font-size: .8rem;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.card-h3 {
+  color: var(--black);
+  font-family: Book Antiqua, serif;
+  font-size: 1.5rem;
+  line-height: .5px;
+  margin-bottom: 20px;
+}
+.card-headings {
+  font-weight: 200;
+  margin: 20px 0 20px;
+  color: var(--lightbrown);
+  font-family: Edwardian Script ITC, fantasy;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 1px;
+  padding: 0;
+}
+.card-text {
+  font-size: 16px;
+  font-weight: lighter;
+}
+.cards-borderDiv {
+  background-color: var(--lightbrown);
+  display: inline;
+  margin: 0 5px;
+  height: 2px;
+  width: 25%;
+}
+
+/* Buttons */
+.mobile-btns {
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  font-family: Merriweather, serif;
+  font-size: 1rem;
+  font-weight: 200;
+  margin: 20px 0;
+  padding: 8px 32px;;
+}
+/* Hover status for buttons */
+.mobile-btns:hover {
+  background-color: var(--white);
+  box-shadow: 0px 10px 50px rgba(187, 164, 132, 0.5);
+  color: var(--black);
+  transform: translateY(-7px);
+}
+/* Pressed status for buttons */
+.mobile-btns:active {
+  background-color: var(--lightbrown);
+  color: var(--white);
+}
+
+/* Social Icons */
+.ig-footer-icon,
+.fa-phone-alt {
+  font-size: 1.25rem;
+  color: white;
+}
+.footer-socials i:hover {
+  color: var(--lightbrown);
+}
+
+/* Font Awesome Icons */
+.menu-icons { /* icons used for dropdown mobile menu */
+  display: block;
+}
+.menu-icon-1 {
+  font-size: 2rem;
+}
+.menu-icon-2 {
+  display: none;
+  font-size: 2rem;
+}
+
+/* Mobile Navbar */
+.nav {
+  padding: 10px 20px;
+  position: relative;
+}
+.nav-logo {
+  height: 100%;
+  width: 150px;
+  padding: 20px 0;
+}
+.nav-logo-div {
+  text-align: center;
+}
+.nav-links {
+  display: none;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.nav-links a {
+  color: var(--white);
+  display: block;
+  font-size: 1rem;
+  padding: 10px 0;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  background-color: var(--white);
+  color: var(--black);
+  text-decoration: underline;
+}
+.nav-links a:active {
+  background-color: var(--white);
+}
+/* Div for Hamburger Menu Links */
+.links-div {
+  /* this is to keep it center aligned with logo */
+  position: absolute;
+  text-align: right;
+  top: 40px;
+  right: 20px;
+}
+
+/* Desktop Navbar */
+.desktop-nav {
+  align-items: center;
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 16px 24px;
+}
+.desktop-nav-logo {
+  height: 100%;
+  width: 150px;
+}
+.nav-links-desktop {
+  /* padding between last nav link and social icons */
+  padding-right: 24px;
+}
+.nav-links-desktop a {
+  color: var(--white);
+  font-family: Book Antiqua, serif;
+  font-size: 1rem;
+  padding: 0 16px;
+  text-decoration: none;
+}
+.nav-links-desktop a:hover {
+  border: 1px solid var(--lightbrown);
+}
+.nav-links-and-icons { /* div for nav links and social icons divs */
+  align-items: center;
+  display: flex;
+}
+.social-icons a {
+  color: var(--white);
+  font-size: 1.25rem;
+}
+.social-icons a:hover {
+  color: var(--lightbrown);
+}
+
+/* Desktop Header */
+.desktop-header {
+  display: none;
+}
+
+/* Mobile Landing Page */
+.landing-section {
+  background-image: url(images/bareque1.jpeg);
+}
+.landing-body,
+.mobile-menu-body,
+.contact-mobile-body,
+.location-mobile-body,
+.reservations-mobile-body {
+  background-color: rgb(0,0,0, .6);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 24px;
+  text-align: center;
+}
+.landing-body h1 {
+  margin: 20px 0;
+}
+.landing-pText  {
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.landing-cta-btn {
+  border-radius: 20px;
+  border-style: none;
+  line-height: 20px;
+  margin-top: 20px;
+  padding: 8px 32px;
+}
+/* the utensils border icon */
+.landing-section i {
+  font-size: 1.5rem !important;
+  margin: 10px 0;
+}
+.borderDiv {
+  width: 30%;
+  height: 2px;
+  background-color: var(--lightbrown);
+  display: inline;
+}
+.border-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* Desktop Landing Page */
+.desktop-landing-content {
+  display: none;
+}
+.landing-statement-text {
+  font-size: 2rem;
+  color: var(--white);
+  line-height: 1px;
+  margin: 20px 0;
+}
+.landing-pText {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 40px auto;
+}
+/* Mobile Menu Section */
+.mobile-menu-section {
+  background-image: url(images/carbonnara.jpg);
+}
+
+/* Desktop Culinary Story Section */
+.culinary-desktop-section {
+  margin: 20px;
+  position: relative;
+  height: 60vh;
+  align-items: center;
+  display: none;
+}
+.culinary-desktop-section img {
+  height: 350px;
+  transform: scaleX(-1);
+}
+.culinary-text-div {
+  background-color: var(--white);
+  box-shadow: 0 0 25px 10px rgba(100, 100, 100, .25);
+  text-align: center;
+  position: absolute;
+  z-index: 1000;
+  top: 10%;
+  right: 0px;
+  float: right;
+  width: 40%;
+  padding: 16px;
+}
+
+/* Mobile Contact Section */
+.contact-mobile-section {
+  background-image: url(images/bareque4.jpeg);
+}
+.contact-mobile-body {
+  height: 100vh;
+  margin-top: 32px;
+}
+.contact-mobile-body h1 {
+  margin-top: 0;
+}
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+}
+.contact-icons i {
+  color: var(--white);
+  font-size: 3rem;
+  margin: 32px 0;
+}
+.contact-icons a {
+  display: inline-block;
+}
+/* Location Section */
+.location-mobile-section {
+  background-image: url(images/bareque6.jpeg);
+  margin: 20px 0;
+}
+
+/* Mobile Reservations Section */
+.reservations-mobile-section {
+  background-image: url(images/bareque2.jpeg);
+}
+/* Reserve Section Desktop */
+.reserve-desktop-section {
+  background-color: var(--black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none;
+  /* height: 60vh; */
+  padding: 40px 20px;
+}
+.reserve-slide-div-desktop {
+  background-color: rgb(0,0,0, .30);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* height: 60vh; */
+  justify-content: center;
+}
+.reserve-desktop-section img {
+  width: 50%;
+  padding: 10px 0 20px;
+}
+.reserve-btn {
+  border-radius: 10px;
+  color: var(--white);
+  font-family: serif;
+  font-size: 16px;
+  background-color: var(--lightbrown);
+  padding: 8px 16px;
+  border: none;
+}
+/* The border image between the text */
+.border-content2 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.slide-borderDiv {
+  background-color: var(--lightbrown);
+  display: inline;
+  height: 2px;
+  width: 80%;
+}
+.border-content2 i {
+  margin: 0 10px;
+}
+
+/* Desktop Explore Menu Section */
+.menu-desktop-section{
+/*  align-items: center;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px; */
+  display: block !important;
+}
+.exploreMenu-text-div {
+  background-color: var(--white);
+  box-shadow: 0 0 25px 20px rgba(100, 100, 100, .20);
+  height: fit-content;
+  text-align: center;
+  padding: 32px;
+}
+.menu-img-container:hover {
+  cursor: pointer;
+  opacity: .5;
+  background-color: dimgray;
+  box-shadow: 0 0 25px 30px rgba(100, 100, 100, .20);
+  filter: brightness(30%);
+}
+.menu-img-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: relative
+}
+.beveragesMenuObject,
+.sideDishMenuObject,
+.entreesMenuObject,
+.dessertMenuObject {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 2px solid var(--lightbrown);
+  border-radius: 10px;
+  box-shadow: 0 0 25px 10px rgba(100, 100, 100, .10);
+}
+.beveragesMenuObject {
+  background-image: url(images/5.jpg);
+}
+.sideDishMenuObject {
+  background-image: url(images/4.jpg);
+  display: none;
+}
+.entreesMenuObject {
+  background-image: url(images/2.jpg);
+  display: none;
+}
+.dessertMenuObject {
+  background-image: url(images/1.jpg);
+  display: none;
+}
+.text-overlay {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  z-index: 2000;
+}
+.menuBtnsDiv {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+}
+.menuImgs1,
+.menuImgs2 {
+  /* flex-direction: column;
+  display: flex;
+  align-items: center; */
+}
+
+/* Mobile Footer */
+.footer {
+  padding: 24px;
+}
+.footer-logo {
+  height: auto;
+  width: 120px;
+  margin-bottom: 20px;
+}
+.footer-logo-div {
+  display: flex;
+  justify-content: center;
+}
+
+/*  Desktop Footer */
+.desktop-footer {
+  background-color: var(--black);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+}
+.desktop-footer h3 {
+  line-height: inherit;
+  margin: 20px 0;
+}
+.desktop-footer i {
+  margin: 10px 0;
+}
+.desktop-footer-logo  {
+  background-color: var(--black);
+  height: 100%;
+  width: 150px;
+  padding: 20px 0;
+}
+.footer-socials {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+.footer-div1,
+.footer-div2,
+.footer-div3 {
+  background-color: var(--black);
+  height: 30vh;
+  color: var(--white);
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+}
+/* Desktop Footer - Reservations link */
+.reservation-footer-link {
+  display: none;
+}
+.desktop-reservation-link {
+  background-color: var(--black);
+  padding: 20px 0 50px;
+  text-align: center;
+}
+.desktop-reservation-link a {
+  color: var(--white);
+  font-size: 1rem;
+}
+.desktop-reservation-link a:hover {
+  color: var(--lightbrown);
+}
+/* Media Queries */
+@media only screen and (max-width: 420px) {
+  .landing-pText,
+  .paragraph-text {
+    font-size: 1.25rem !important;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    padding: 5px inherit;
+    margin: 0 !important;
+  }
+  .mobile-menu-section,
+  .contact-mobile-section,
+  .location-mobile-section,
+  .reservations-mobile-section,
+}
+@media only screen and (max-width: 600px) {
+  .paragraph-text {
+    font-weight: lighter;
+    font-size: 1.5rem;
+  }
+  .landing-body {
+    margin-top: 20px;
+    justify-content: flex-start;
+  }
+  .landing-body h1 {
+    margin: 30px 0 20px;
+  }
+  .menuExplore-images-div img {
+    width: 70% !important;
+  }
+}
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: var(--white);
+  }
+  .landing-section {
+    background-image: url(images/bareque6.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+  }
+  .landing-body {
+    align-content: center;
+    background-color: rgb(0,0,0, .4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  /* the border icon with silverware */
+  .landing-section i {
+    color: var(--white);
+    font-size: 1.5rem !important;
+  }
+  .landing-section .borderDiv {
+    background-color: var(--white);
+    margin: 10px 20px;
+    width: 20%;
+  }
+  /* the div surrounding the border icon */
+  .border-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* hiding the mobile landing content */
+  .desktop-landing-content {
+    display: block;
+  }
+  /* displaying the desktop landing content */
+  .landing-content1 {
+    display: none;
+  }
+  /* hiding the mobile landing page button */
+  .landing-btn-div button {
+    display: none;
+  }
+  /* all paragraph text on page */
+  .landing-pText {
+    width: 60%; /* centering text, p is inline */
+  }
+  /* the mobile section of some sections display none in desktop */
+  .mobile-menu-section,
+  .contact-mobile-section,
+  .location-mobile-section,
+  .reservations-mobile-section,
+  .footer {
+    display: none;
+  }
+  .culinary-desktop-section,
+  .menu-desktop-section,
+  .desktop-footer {
+    display: flex;
+  }
+  .reserve-desktop-section,
+  .reservation-footer-link {
+    display: block;
+  }
+  /* to keep absolute positioned culinary card properly oriented when div is reduced */
+  .culinary-text-div p {
+    line-height: 1;
+  }
+
+}
+@media only screen and (min-width: 660px) {
+  .mobile-header {
+    display: none;
+  }
+  .desktop-header {
+    display: inherit;
+  }
+  /* To fill space on tablet screens */
+  .landing-section {
+    width: 100%;
+  }
+  .menu-desktop-section {
+    margin: 20px 40px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .menuExplore-images-div img {
+    width: 80% !important;
+  }
+  .silverware-border-img {
+    width: 30%;
+  }
+  .culinary-text-div p {
+    line-height: normal;
+    font-weight: lighter;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .desktop-landing-content {
+    display: flex;
+    align-items: center;
+  }
+  .desktop-landing-content h1 {
+    padding: 0;
+    margin: 0;
+  }
+  .landing-statement-text {
+    margin-left: 80px;
+  }
+  .landing-body {
+    width: auto;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+  .landing-pText {
+    margin: 0;
+    width: 50%;
+    padding: 16px 0;
+  }
+  .border-content {
+    justify-content: flex-start;
+    padding: 10px 0;
+  }
+  #landing-section .border-content {
+    margin-left: 20px;
+  }
+  .border-content-cards {
+    justify-content: center !important;
+  }
+  .borderDiv {
+    margin: 0 !important;
+    width: 15% !important;
+  }
+  .landing-section i {
+    font-size: 1.25rem !important;
+    margin: 0 20px;
+  }
+  .menuExplore-images-div img {
+    width: 70% !important;
+  }
+}
+@media only screen and (min-width: 930px) {
+  .culinary-desktop-section img {
+    height: 450px;
+    margin: 10px 0;
+  }
+  .culinary-text-div {
+    padding: 32px 16px;
+    right: 10%;
+    top: 20%;
+  }
+  .culinary-desktop-section {
+    height: fit-content;
+    margin: 20px;
+  }
+}
+@media only screen and (min-width: 1010px) {
+  .menuExplore-images-div img {
+    width: 60% !important;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .menuExplore-images-div img {
+    width: 50% !important;
+  }
+}
