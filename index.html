@@ -29,23 +29,27 @@
       <div>
         <!-- Mobile Navbar -->
         <nav class="nav">
-          <div class="links-div">
+          <div class="hamburger-div">
             <a href="#" onmouseover="mobileMenuMouseover();" onmouseleave="mobileMenuMouseleave();" onclick="mobileMenuClick1();" class="menu-icons"> <i class="fas fa-bars menu-icon-1"></i>
             </a>
             <a href="#" onmouseover="mobileMenuMouseover();" onmouseleave="mobileMenuMouseleave();" onclick="mobileMenuClick2();" class="menu-icons"> <i class="fas fa-glass-martini-alt menu-icon-2"></i>
             </a>
           </div>
+
           <div class="nav-logo-div">
-            <a href="#"><img class="nav-logo" src="images/LOGO BAREQUE.png" alt="bareque restaurant logo"></a>
+            <a style="font-size: 0;" href="#"><img class="nav-logo" src="images/LOGO BAREQUE.png" alt="bareque restaurant logo"></a>
           </div>
         </nav>
       </div>
-      <div id="nav-links" class="nav-links">
-        <a href="#Home">Home</a>
-        <a href="#Menu">Menu</a>
-        <a href="#Contact">Contact</a>
-        <a href="#Location">Location</a>
-        <a href="#Reservations">Reservations</a>
+
+      <div class="nav-bar hidden">
+          <ul>
+              <li class="nav-bar-btn"><a href="index.html">Home</a></li>
+              <li class="nav-bar-btn"><a href="index.html/#contact">Contacto</a></li>
+              <li class="nav-bar-btn"><a href="index.html/#location">Ubicación</a></li>
+              <li class="nav-bar-btn"><a href="index.html/#reservations">Reservas</a></li>
+              <li class="nav-bar-btn"><a href="menu.html">Menú</a></li>
+          </ul>
       </div>
     </header>
 
@@ -121,7 +125,7 @@
         <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nulla eos dolores alias, illo quaerat modi ipsa ut perferendis, nam voluptas doloremque optio beatae! Fugiat delectus recusandae fuga eligendi
           vitae!</p>
         <div>
-          <button type="button" class="mobile-btns">Menu</button>
+          <a href="menu.html" class="mobile-btns mobile-menu-btn">Menu</a>
         </div>
       </div>
     </section>

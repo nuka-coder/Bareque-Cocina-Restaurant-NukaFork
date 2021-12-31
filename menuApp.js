@@ -1,41 +1,48 @@
 // Functionality of the navbar
-const toggleBtn = document.querySelector(".toggle-container");
+const toggleBtn = $(".bars-icon");
 const navBar = document.querySelector(".nav-bar");
-const martini = document.querySelector(".martini");
+const martini = $(".martini");
 
-toggleBtn.addEventListener("click", () => {
+toggleBtn.on("click", () => {
   if (navBar.classList.contains("hidden")) {
     navBar.classList.remove("hidden");
     navBar.classList.add("show");
 
     //change the icon
-    toggleBtn.classList.add("hide-bars-icon");
-    martini.classList.add("martini-show");
+    toggleBtn.css("display", "none");
+    martini.slideDown();
   } else {
     navBar.classList.add("hidden");
     navBar.classList.remove("show");
 
-    toggleBtn.classList.remove("hide-bars-icon");
-    martini.classList.remove("maritini-show");
+    //change the icon, hide martini icon
+    toggleBtn.slideDown();
+    martini.css("display", "none");
   }
 });
 
-martini.addEventListener("click", () => {
+martini.on("click", () => {
   if (navBar.classList.contains("hidden")) {
     navBar.classList.remove("hidden");
     navBar.classList.add("show");
 
     //change the icon
-    toggleBtn.classList.add("hide-bars-icon");
-    martini.classList.add("martini-show");
+    toggleBtn.css("display", "none");
+    martini.slideDown();
   } else {
     navBar.classList.add("hidden");
     navBar.classList.remove("show");
 
-    toggleBtn.classList.remove("hide-bars-icon");
-    martini.classList.remove("martini-show");
+    //change the icon, hide martini icon
+    toggleBtn.slideDown();
+    martini.css("display", "none");
   }
 });
+    // change toggle icon colors
+    function menuToggleColor() {
+        $(".fa-bars").css("color", "#BBA484");
+        $(".fa-glass-martini-alt").css("color", "#BBA484");
+    }
 
 // Filters
 
