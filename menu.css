@@ -1,7 +1,12 @@
 /* Fonts */
 @import url("http://fonts.cdnfonts.com/css/book-antiqua");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap");
-
+/* CSS Variables */
+:root {
+  --black: #000;
+  --white: #fff;
+  --lightbrown: #BBA484;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -45,6 +50,11 @@
   z-index: 20;
 }
 
+.nav-logo {
+  width: 120px;
+  padding: 30px 0;
+}
+
 .logo {
   width: 7rem;
   filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(142deg)
@@ -53,8 +63,8 @@
 
 .toggle-container {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 40px;
+  left: 40px;
   margin-right: 1.5em;
   align-items: center;
   transition: transform 200ms;
@@ -62,9 +72,16 @@
 
 .toggle-container i {
   color: #ffffff;
-  font-size: 2.5em;
+  font-size: 2em;
 }
-
+/* Hover for toggle container, needed for 'resized screens' that are non-mobile */
+.toggle-container i:hover {
+  color: var(--lightbrown);
+  cursor: pointer;
+}
+.toggle-container i:active {
+  color: var(--lightbrown);
+}
 .nav-bar {
   width: 50%;
   height: 100%;
@@ -76,7 +93,8 @@
 .nav-bar li {
   list-style-type: none;
   text-align: left;
-  padding: 2em;
+  /* If padding is 2em the last link ('Menu') will never be visible on mobile screen */
+  padding: 1rem;
   color: #fff;
   cursor: pointer;
   text-decoration: none;
@@ -85,6 +103,7 @@
 .nav-bar li a {
   text-decoration: none;
   color: #fff;
+  font-size: 1.5rem;
 }
 
 .nav-bar-btn {
@@ -93,6 +112,15 @@
   padding: 1em;
   color: #fff;
   cursor: pointer;
+}
+
+.nav-bar-btn a:active {
+  color: var(--lightbrown);
+}
+
+.nav-bar-btn a:focus {
+  text-decoration: none;
+  background-color: inherit;
 }
 
 .hidden {
@@ -112,17 +140,16 @@
   z-index: 20;
 }
 
-.hide-bars-icon {
-  transform: translateX(-100px);
-}
-
 .martini {
-  transform: translateY(-100px);
-  transition: transform 500ms;
+  display: none;
 }
 
-.martini-show {
-  transform: translateY(0px);
+.toggle-container i:hover {
+  color: var(--lightbrown);
+}
+
+.toggle-container i:active {
+  color: var(--lightbrown);
 }
 
 .nav-bar li:hover {
@@ -194,7 +221,6 @@
 
 .item-info {
   background-color: #bba484;
-  opacity: 0.9;
   margin: 30px auto;
   width: 90%;
   display: flex;
@@ -241,7 +267,7 @@
 }
 
 .bebidas-section {
-  background-color: rgba(187, 164, 132, 0.6);
+  background-color: rgba(187, 164, 132, 1);
   padding: 10px;
   width: 90%;
   margin: auto;
