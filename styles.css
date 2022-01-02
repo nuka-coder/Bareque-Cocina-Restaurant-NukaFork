@@ -143,7 +143,7 @@ h6 {
 
 /* Mobile Navbar */
 .nav {
-  padding: 10px 20px;
+  padding: 5px 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -188,7 +188,7 @@ h6 {
   left: 40px;
 }
 
-/* Juan's Navbar Slide Out */
+/* Juan's Mobile Navbar Slide Out */
 
 .nav-bar {
   height: 100%;
@@ -267,6 +267,7 @@ h6 {
   font-size: 1rem;
   padding: 0 16px;
   text-decoration: none;
+  transition: border .7s linear;
 }
 .nav-links-desktop a:hover {
   border: 1px solid var(--lightbrown);
@@ -290,7 +291,7 @@ h6 {
 
 /* Mobile Landing Page */
 .landing-section {
-  background-image: url(images/bareque1.jpeg);
+  background: url(images/bareque1.jpeg) no-repeat left fixed;
 }
 .landing-body,
 .mobile-menu-body,
@@ -366,7 +367,6 @@ h6 {
 .culinary-desktop-section {
   margin: 20px;
   position: relative;
-  height: 60vh;
   align-items: center;
   display: none;
 }
@@ -418,12 +418,16 @@ h6 {
 }
 /* Reserve Section Desktop */
 .reserve-desktop-section {
-  background-color: var(--black);
+  background: url(images/meat.jpg) no-repeat center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
   display: none;
-  /* height: 60vh; */
-  padding: 40px 20px;
+}
+.reserve-desktop-section h1 {
+  color: var(--lightbrown);
+}
+.reserve-desktop-section .card-headings {
+  color: var(--white);
+  font-size: 2.25rem;
 }
 .reserve-slide-div-desktop {
   background-color: rgb(0,0,0, .30);
@@ -431,6 +435,8 @@ h6 {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  height: 60vh;
+  padding: 40px 20px;
 }
 .reserve-desktop-section img {
   width: 50%;
@@ -477,8 +483,8 @@ h6 {
 /* Desktop Explore Menu Section */
 .menu-desktop-section {
   align-items: center;
-  display: flex;
-  margin: 20px;
+  display: none;
+  margin: 40px 20px;
   text-align: center;
 }
 .exploreMenu-text-div {
@@ -486,8 +492,16 @@ h6 {
   box-shadow: 0 0 25px 20px rgba(100, 100, 100, .20);
   height: fit-content;
   text-align: center;
-  padding: 32px;
-}  
+  padding: 32px 60px;
+}
+
+.menu-btns-containers {
+  display: flex;
+}
+
+.menu-btns {
+  display: grid;
+}
 
 .menu-link-imgs {
   border: 2px solid var(--lightbrown);
@@ -496,10 +510,10 @@ h6 {
 .entrees-link,
 .sideDishes-link,
 .desserts-link {
-  width: 30%;
+  width: 60%;
 }
 .beverages-link {
-  width: 20%;
+  width: 45%;
 }
 
 
@@ -571,6 +585,7 @@ h6 {
 .desktop-reservation-link a:hover {
   color: var(--lightbrown);
 }
+
 /* Media Queries */
 @media only screen and (max-width: 420px) {
   .landing-pText,
@@ -584,7 +599,6 @@ h6 {
     padding: 5px inherit;
     margin: 0 !important;
   }
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -603,14 +617,14 @@ h6 {
   .landing-body h1 {
     margin: 30px 0 20px;
   }
-  .menuExplore-images-div img {
-    width: 70% !important;
-  }
 }
 
 @media only screen and (max-width: 660px) and (min-width: 600px) {
   .landing-section {
-    margin-top: 110px;
+    margin-top: 100px;
+  }
+  .exploreMenu-text-div {
+    padding: 16px 32px;
   }
 }
 
@@ -619,8 +633,7 @@ h6 {
     background-color: var(--white);
   }
   .landing-section {
-    background-image: url(images/bareque6.jpeg);
-    background-repeat: no-repeat;
+    background: url(images/bareque6.jpeg) no-repeat center fixed;
     background-size: cover;
     height: 100vh;
   }
@@ -681,7 +694,6 @@ h6 {
   .reservation-footer-link {
     display: block;
   }
-
 }
 
 @media only screen and (min-width: 660px) {
@@ -703,7 +715,6 @@ h6 {
   .culinary-desktop-section {
     align-content: center;
     justify-content: center;
-    margin: 0;
   }
   .culinary-desktop-section img {
     display: none;
@@ -714,21 +725,33 @@ h6 {
     margin: 0 20px;
     width: inherit;
   }
+  .exploreMenu-text-div {
+    border-radius: 10px;
+  }
   .card-text {
     padding: 0 50px;
   }
 }
 @media only screen and (min-width: 800px) {
-  .menuExplore-images-div img {
-    width: 80% !important;
-  }
   .silverware-border-img {
     width: 30%;
   }
 }
+
 @media only screen and (max-width: 850px) {
   .culinary-desktop-section img {
     height: 300px;
+  }
+  .menu-desktop-section .card-text {
+    padding: 0;
+  }
+  .entrees-link,
+  .sideDishes-link,
+  .desserts-link {
+    width: 75%;
+  }
+  .beverages-link {
+    width: 60%;
   }
 }
 
@@ -773,10 +796,8 @@ h6 {
     font-size: 1.25rem !important;
     margin: 0 20px;
   }
-  .menuExplore-images-div img {
-    width: 70% !important;
-  }
 }
+
 @media only screen and (min-width: 930px) {
   .culinary-desktop-section img {
     height: 450px;
@@ -795,15 +816,5 @@ h6 {
     font-size: 1.25rem;
     line-height: normal;
     margin-bottom: 0;
-  }
-}
-@media only screen and (min-width: 1010px) {
-  .menuExplore-images-div img {
-    width: 60% !important;
-  }
-}
-@media only screen and (min-width: 1050px) {
-  .menuExplore-images-div img {
-    width: 50% !important;
   }
 }
