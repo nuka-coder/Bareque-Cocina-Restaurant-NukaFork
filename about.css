@@ -1,0 +1,114 @@
+BODY {
+  background-color: var(--black);
+}
+
+H4 {
+  font-weight: 200;
+}
+
+.about-banner {
+  background-image: url(images/spice.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  height: 40vh;
+  margin-bottom: 50px;
+  padding: 20px 40px;
+  align-items: center;
+  text-align: center;
+}
+
+.about-content-section {
+  margin: 40px 20px 60px;
+}
+
+.about-content {
+  margin: 80px 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.about-imgs {
+  border-radius: 5px;
+  height: auto;
+  max-width: 90%;
+}
+
+.aboutImg1 {
+  filter: brightness(80%);
+  margin-top: 20px;
+}
+
+.aboutImgMedium {
+  display: none;
+}
+
+.culinary-about-div,
+.about-location-div {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 0 25px 10px rgba(100, 100, 100, .25);
+  text-align: center;
+  width: auto;
+  margin: 10px 20px;
+  padding: 16px;
+}
+
+.about-location-div {
+  width: 60%;
+}
+
+.about-visit-text {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.desktop-footer {
+  border-top: 10px solid var(--white);
+}
+
+@media only screen and (max-width: 1030px) {
+  H3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+@media only screen and (max-width: 980px) {
+  .about-content-section {
+    margin-top: 0 !important;
+  }
+
+  .culinary-about-div,
+  .about-location-div {
+    margin: 20px 0 40px;
+    width: 100%;
+  }
+
+  .culinary-about-div .card-text {
+    display: inline-block;
+    text-align: center;
+    width: 70%;
+  }
+
+  .aboutImgMedium {
+    box-shadow: 0 0 25px 10px rgba(100, 100, 100, .25);
+    display: inline;
+  }
+
+  .aboutImgLarge,
+  .api-divLarge {
+    display: none;
+  }
+
+  .about-content {
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+
+  .about-banner {
+    margin-bottom: 20px;
+  }
+}

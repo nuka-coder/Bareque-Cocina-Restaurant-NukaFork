@@ -16,13 +16,29 @@ function mobileMenuClick2() {
   navBarSlideout.addClass("hidden");
   navBarSlideout.removeClass("show");//hide menu links slideout
 };
-//function for mouseover event listener for menu icons
-function mobileMenuMouseover() {
-$(".menu-icon-1").css("color","#BBA484");
-$(".menu-icon-2").css("color","#BBA484");
-};
 
-function mobileMenuMouseleave() {
-$(".menu-icon-1").css("color","#fff");
-$(".menu-icon-2").css("color","#fff");
-};
+// Scrolling Animations
+window.addEventListener("scroll", function() {
+  let culinaryTextContent = $(".culinary-text-div");
+
+  var windowPosition = window.scrollY > 300
+  //toggling animation classes for scrolling listener
+
+  culinaryTextContent.toggleClass("js-slide", windowPosition);
+
+});
+
+window.addEventListener("scroll", function() {
+  var windowPosition = window.scrollY > 1100
+  //toggling animation classes for scrolling listener
+
+  $(".slide1").toggleClass("js-slide", windowPosition);
+  $(".slide4").toggleClass("js-slide", windowPosition);
+
+  $(".slide2").toggleClass("js-slide2", windowPosition);
+  $(".slide3").toggleClass("js-slide2", windowPosition);
+});
+// Menu-btn hover listener
+// $('.menuObjects').mouseover(function (event) {
+//   $(".menu-btn-title").css("display", "block");
+// });

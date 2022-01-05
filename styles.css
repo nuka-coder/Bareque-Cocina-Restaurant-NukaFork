@@ -5,19 +5,27 @@
   /* --goldenbrown: #5D492C; */
   --lightbrown: #BBA484;
 }
+
 /* Global Styling */
 body {
   background-color: var(--black);
   margin: 0;
 }
+
 a {
   font-family: Merriweather, serif;
   font-size: 1.75rem;
   text-decoration: none;
 }
+
 p {
   font-family: 'Oswald', serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   color: var(--white);
   font-family: Book Antiqua, serif;
@@ -26,9 +34,57 @@ h1 {
   letter-spacing: 2px;
   margin: 5px 0;
 }
+
 h6 {
   display: inline-block;
 }
+
+/* Scroll Animation Classes */
+/* .js-opacity {
+  animation: animation-opacity 1s ease;
+} */
+.js-slide {
+  animation: animation-slide 600ms ease-in;
+}
+
+@keyframes animation-slide {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.js-slide2 {
+  animation: animation-slide2 400ms ease-in;
+}
+
+@keyframes animation-slide2 {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes animation-opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 /*Repeated Color Stylings */
 .menu-icons,
 .nav,
@@ -36,13 +92,15 @@ h6 {
 .footer {
   background-color: var(--black);
 }
+
 .menu-icon-1,
 .menu-icon-2,
 .footer {
   color: var(--white);
 }
+
 .utensils-border-icon {
-    color: var(--lightbrown);
+  color: var(--lightbrown);
 }
 
 /* Repeated Structure Styling */
@@ -55,16 +113,24 @@ h6 {
   background-size: cover;
   height: 100vh;
 }
+
 .paragraph-text {
   color: var(--white);
 }
+
 /* Card Styling for Desktop Cards (text, headings, and page link) */
 .card-links {
   color: var(--lightbrown);
-  font-size: .8rem;
+  font-size: 1rem;
   margin-bottom: 10px;
   text-decoration: underline;
+  transition: color 1s linear;
 }
+
+.card-links:hover {
+  color: var(--black);
+}
+
 .card-h3 {
   color: var(--black);
   font-family: Book Antiqua, serif;
@@ -72,6 +138,7 @@ h6 {
   line-height: .5px;
   margin-bottom: 16px;
 }
+
 .card-headings {
   font-weight: 200;
   margin: 20px 0 20px;
@@ -82,10 +149,12 @@ h6 {
   line-height: 1px;
   padding: 0;
 }
+
 .card-text {
   font-size: 16px;
   font-weight: lighter;
 }
+
 .cards-borderDiv {
   background-color: var(--lightbrown);
   display: inline;
@@ -103,8 +172,10 @@ h6 {
   font-size: 1rem;
   font-weight: 200;
   margin: 20px 0;
-  padding: 8px 32px;;
+  padding: 8px 32px;
+  ;
 }
+
 /* Hover status for buttons */
 .mobile-btns:hover {
   background-color: var(--white);
@@ -113,6 +184,7 @@ h6 {
   cursor: pointer;
   transform: translateY(-7px);
 }
+
 /* Pressed status for buttons */
 .mobile-btns:active {
   background-color: var(--lightbrown);
@@ -122,20 +194,25 @@ h6 {
 /* Social Icons */
 .ig-footer-icon,
 .fa-phone-alt {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: white;
+  transition: color .3s linear;
 }
+
 .footer-socials i:hover {
   color: var(--lightbrown);
 }
 
 /* Font Awesome Icons */
-.menu-icons { /* icons used for dropdown mobile menu */
+.menu-icons {
+  /* icons used for dropdown mobile menu */
   display: block;
 }
+
 .menu-icon-1 {
   font-size: 2rem;
 }
+
 .menu-icon-2 {
   display: none;
   font-size: 2rem;
@@ -152,18 +229,22 @@ h6 {
   justify-content: center;
   z-index: 20;
 }
+
 .nav-logo {
   width: 120px;
   padding: 20px 0;
 }
+
 .nav-logo-div {
   text-align: center;
 }
+
 .nav-links {
   display: none;
   padding-bottom: 20px;
   text-align: center;
 }
+
 .nav-links a {
   color: var(--white);
   display: block;
@@ -171,14 +252,17 @@ h6 {
   padding: 10px 0;
   text-decoration: none;
 }
+
 .nav-links a:hover {
   background-color: var(--white);
   color: var(--black);
   text-decoration: underline;
 }
+
 .nav-links a:active {
   background-color: var(--white);
 }
+
 /* Div for Hamburger Menu Links */
 .hamburger-div {
   /* this is to keep it center aligned with logo */
@@ -189,7 +273,6 @@ h6 {
 }
 
 /* Juan's Mobile Navbar Slide Out */
-
 .nav-bar {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.80);
@@ -236,9 +319,11 @@ h6 {
   left: 0;
   z-index: 20;
 }
+
 .nav-bar-btn a:active {
   color: var(--lightbrown);
 }
+
 .nav-bar-btn a:focus {
   text-decoration: none;
   background-color: inherit;
@@ -253,33 +338,42 @@ h6 {
   margin: 0;
   padding: 16px 24px;
 }
+
 .desktop-nav-logo {
   height: 100%;
   width: 150px;
 }
+
 .nav-links-desktop {
   /* padding between last nav link and social icons */
   padding-right: 24px;
 }
+
 .nav-links-desktop a {
   color: var(--white);
   font-family: Book Antiqua, serif;
   font-size: 1rem;
   padding: 0 16px;
   text-decoration: none;
-  transition: border .7s linear;
+  transition: border .3s linear;
 }
+
 .nav-links-desktop a:hover {
   border: 1px solid var(--lightbrown);
 }
-.nav-links-and-icons { /* div for nav links and social icons divs */
+
+.nav-links-and-icons {
+  /* div for nav links and social icons divs */
   align-items: center;
   display: flex;
 }
+
 .social-icons a {
   color: var(--white);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  transition: color .3s linear;
 }
+
 .social-icons a:hover {
   color: var(--lightbrown);
 }
@@ -293,13 +387,13 @@ h6 {
 .landing-section {
   background: url(images/bareque1.jpeg) no-repeat left fixed;
 }
+
 .landing-body,
 .mobile-menu-body,
 .contact-mobile-body,
 .location-mobile-body,
 .reservations-mobile-body {
-  background-color: rgb(0,0,0, .6);
-
+  background-color: rgb(0, 0, 0, .6);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -307,14 +401,17 @@ h6 {
   padding: 0 24px;
   text-align: center;
 }
+
 .landing-body h1 {
   margin: 20px 0;
 }
-.landing-pText  {
+
+.landing-pText {
   color: var(--white);
   font-size: 1rem;
   line-height: 1.5rem;
 }
+
 .landing-cta-btn {
   border-radius: 20px;
   border-style: none;
@@ -322,47 +419,57 @@ h6 {
   margin-top: 20px;
   padding: 8px 32px;
 }
+
 /* the utensils border icon */
 .landing-section i {
   font-size: 1.5rem !important;
   margin: 10px 0;
 }
+
 .borderDiv {
   width: 30%;
   height: 2px;
   background-color: var(--lightbrown);
   display: inline;
 }
+
 .border-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 /* Desktop Landing Page */
 .desktop-landing-content {
   display: none;
 }
+
 .landing-statement-text {
   font-size: 2rem;
   color: var(--white);
   line-height: 1px;
   margin: 20px 0;
 }
+
 .landing-pText {
   font-size: 1.5rem;
   font-weight: lighter;
   margin: 40px auto;
 }
+
 /* Mobile Menu Section */
 .mobile-menu-section {
   background-image: url(images/carbonnara.jpg);
 }
+
 .mobile-menu-btn {
   background-color: var(--white);
 }
+
 .mobile-menu-body p {
   margin-bottom: 40px !important;
 }
+
 /* Desktop Culinary Story Section */
 .culinary-desktop-section {
   margin: 20px;
@@ -370,10 +477,12 @@ h6 {
   align-items: center;
   display: none;
 }
+
 .culinary-desktop-section img {
   height: 350px;
   transform: scaleX(-1);
 }
+
 .culinary-text-div {
   background-color: var(--white);
   box-shadow: 0 0 25px 10px rgba(100, 100, 100, .25);
@@ -387,25 +496,31 @@ h6 {
 .contact-mobile-section {
   background-image: url(images/bareque4.jpeg);
 }
+
 .contact-mobile-body {
   height: 100vh;
   margin-top: 32px;
 }
+
 .contact-mobile-body h1 {
   margin-top: 0;
 }
+
 .contact-icons {
   display: flex;
   flex-direction: column;
 }
+
 .contact-icons i {
   color: var(--white);
   font-size: 3rem;
   margin: 32px 0;
 }
+
 .contact-icons a {
   display: inline-block;
 }
+
 /* Location Section */
 .location-mobile-section {
   background-image: url(images/bareque6.jpeg);
@@ -416,21 +531,25 @@ h6 {
 .reservations-mobile-section {
   background-image: url(images/bareque2.jpeg);
 }
+
 /* Reserve Section Desktop */
 .reserve-desktop-section {
   background: url(images/meat.jpg) no-repeat center fixed;
   background-size: cover;
   display: none;
 }
+
 .reserve-desktop-section h1 {
   color: var(--lightbrown);
 }
+
 .reserve-desktop-section .card-headings {
   color: var(--white);
   font-size: 2.25rem;
 }
+
 .reserve-slide-div-desktop {
-  background-color: rgb(0,0,0, .30);
+  background-color: rgb(0, 0, 0, .30);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -438,10 +557,12 @@ h6 {
   height: 60vh;
   padding: 40px 20px;
 }
+
 .reserve-desktop-section img {
   width: 50%;
   padding: 10px 0 20px;
 }
+
 .reserve-btn {
   background-color: var(--lightbrown);
   border: none;
@@ -455,14 +576,17 @@ h6 {
   padding: 8px 16px;
   transition: background-color 0.5s ease-in-out;
 }
+
 .reserve-btn:hover {
   background-color: rgb(187, 164, 132, .7);
   cursor: pointer;
 }
+
 .reserve-btn:active {
   background-color: rgb(187, 164, 132, .7);
   cursor: pointer;
 }
+
 /* The border image between the text */
 .border-content2 {
   align-items: center;
@@ -470,12 +594,14 @@ h6 {
   justify-content: center;
   margin: 20px 0;
 }
+
 .slide-borderDiv {
   background-color: var(--lightbrown);
   display: inline;
   height: 2px;
   width: 80%;
 }
+
 .border-content2 i {
   margin: 0 10px;
 }
@@ -487,6 +613,7 @@ h6 {
   margin: 40px 20px;
   text-align: center;
 }
+
 .exploreMenu-text-div {
   background-color: var(--white);
   box-shadow: 0 0 25px 20px rgba(100, 100, 100, .20);
@@ -503,30 +630,52 @@ h6 {
   display: grid;
 }
 
+.menu-btns a {
+  position: relative;
+}
+
+.menu-btns a:hover {
+  filter: brightness(70%);
+}
+
 .menu-link-imgs {
   border: 2px solid var(--lightbrown);
   border-radius: 10px;
 }
+
 .entrees-link,
 .sideDishes-link,
 .desserts-link {
   width: 60%;
 }
+
 .beverages-link {
   width: 45%;
 }
 
-
+.menu-btn-title {
+  color: var(--black);
+  display: none;
+  font-family: Oswald, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  left: 0;
+}
 
 /* Mobile Footer */
 .footer {
   padding: 24px;
 }
+
 .footer-logo {
   height: auto;
   width: 120px;
   margin-bottom: 20px;
 }
+
 .footer-logo-div {
   display: flex;
   justify-content: center;
@@ -541,24 +690,29 @@ h6 {
   margin: 0;
   width: 100%;
 }
+
 .desktop-footer h3 {
   line-height: inherit;
   margin: 20px 0;
 }
+
 .desktop-footer i {
   margin: 10px 0;
 }
-.desktop-footer-logo  {
+
+.desktop-footer-logo {
   background-color: var(--black);
   height: 100%;
   width: 150px;
   padding: 20px 0;
 }
+
 .footer-socials {
   display: flex;
   align-content: center;
   justify-content: space-around;
 }
+
 .footer-div1,
 .footer-div2,
 .footer-div3 {
@@ -569,32 +723,40 @@ h6 {
   text-align: center;
   width: 100%;
 }
+
 /* Desktop Footer - Reservations link */
-.reservation-footer-link {
+.reservation-footer-section {
   display: none;
 }
+
 .desktop-reservation-link {
   background-color: var(--black);
   padding: 20px 0 50px;
   text-align: center;
 }
+
 .desktop-reservation-link a {
   color: var(--white);
   font-size: 1rem;
+  transition: color .3s linear;
 }
+
 .desktop-reservation-link a:hover {
   color: var(--lightbrown);
 }
 
 /* Media Queries */
 @media only screen and (max-width: 420px) {
+
   .landing-pText,
   .paragraph-text {
     font-size: 1.25rem !important;
   }
+
   h1 {
     font-size: 2.5rem;
   }
+
   p {
     padding: 5px inherit;
     margin: 0 !important;
@@ -606,14 +768,17 @@ h6 {
     font-weight: lighter;
     font-size: 1.5rem;
   }
+
   .landing-section {
     margin: 112px 0 0;
   }
+
   .landing-body {
     justify-content: center;
     /* setting top margin to move section from behind fixed navbar */
     margin: 100px 0 0;
   }
+
   .landing-body h1 {
     margin: 30px 0 20px;
   }
@@ -623,6 +788,7 @@ h6 {
   .landing-section {
     margin-top: 100px;
   }
+
   .exploreMenu-text-div {
     padding: 16px 32px;
   }
@@ -632,51 +798,62 @@ h6 {
   body {
     background-color: var(--white);
   }
+
   .landing-section {
     background: url(images/bareque6.jpeg) no-repeat center fixed;
     background-size: cover;
     height: 100vh;
   }
+
   .landing-body {
     align-content: center;
-    background-color: rgb(0,0,0, .4);
+    background-color: rgb(0, 0, 0, .4);
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
   }
+
   /* the border icon with silverware */
   .landing-section i {
     color: var(--white);
     font-size: 1.5rem !important;
   }
+
   .landing-section .borderDiv {
     background-color: var(--white);
     margin: 10px 20px;
     width: 20%;
   }
+
   /* the div surrounding the border icon */
   .border-content {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   /* hiding the mobile landing content */
   .desktop-landing-content {
     display: block;
   }
+
   /* displaying the desktop landing content */
   .landing-content1 {
     display: none;
   }
+
   /* hiding the mobile landing page button */
   .landing-btn-div button {
     display: none;
   }
+
   /* all paragraph text on page */
   .landing-pText {
-    width: 60%; /* centering text, p is inline */
+    width: 60%;
+    /* centering text, p is inline */
   }
+
   /* the mobile section of some sections display none in desktop */
   .mobile-menu-section,
   .contact-mobile-section,
@@ -685,13 +862,15 @@ h6 {
   .footer {
     display: none;
   }
+
   .culinary-desktop-section,
   .menu-desktop-section,
   .desktop-footer {
     display: flex;
   }
+
   .reserve-desktop-section,
-  .reservation-footer-link {
+  .reservation-footer-section {
     display: block;
   }
 }
@@ -700,38 +879,47 @@ h6 {
   .mobile-header {
     display: none;
   }
+
   .desktop-header {
     display: inherit;
   }
+
   /* To fill space on tablet screens */
   .landing-section {
     width: 100%;
   }
+
   .menu-desktop-section {
     margin: 20px 40px;
   }
 }
+
 @media only screen and (max-width: 770px) {
   .culinary-desktop-section {
     align-content: center;
     justify-content: center;
   }
+
   .culinary-desktop-section img {
     display: none;
   }
+
   .culinary-text-div {
-    background-color: rgba(255,255,255, 1);
+    background-color: rgba(255, 255, 255, 1);
     border-radius: 10px;
     margin: 0 20px;
     width: inherit;
   }
+
   .exploreMenu-text-div {
     border-radius: 10px;
   }
+
   .card-text {
     padding: 0 50px;
   }
 }
+
 @media only screen and (min-width: 800px) {
   .silverware-border-img {
     width: 30%;
@@ -742,14 +930,17 @@ h6 {
   .culinary-desktop-section img {
     height: 300px;
   }
+
   .menu-desktop-section .card-text {
     padding: 0;
   }
+
   .entrees-link,
   .sideDishes-link,
   .desserts-link {
     width: 75%;
   }
+
   .beverages-link {
     width: 60%;
   }
@@ -760,38 +951,47 @@ h6 {
     display: flex;
     align-items: center;
   }
+
   .desktop-landing-content h1 {
     padding: 0;
     margin: 0;
   }
+
   .landing-statement-text {
     margin-left: 80px;
   }
+
   .landing-body {
     width: auto;
     flex-direction: row;
     justify-content: center;
     text-align: left;
   }
+
   .landing-pText {
     margin: 0;
     width: 50%;
     padding: 16px 0;
   }
+
   .border-content {
     justify-content: flex-start;
     padding: 10px 0;
   }
+
   #landing-section .border-content {
     margin-left: 20px;
   }
+
   .border-content-cards {
     justify-content: center !important;
   }
+
   .borderDiv {
     margin: 0 !important;
     width: 15% !important;
   }
+
   .landing-section i {
     font-size: 1.25rem !important;
     margin: 0 20px;
@@ -803,14 +1003,17 @@ h6 {
     height: 450px;
     margin: 10px 0;
   }
+
   .culinary-text-div {
     padding: 32px 16px;
-}
+  }
+
   .culinary-desktop-section {
     height: fit-content;
     margin: 20px;
   }
 }
+
 @media only screen and (max-width: 1000px) {
   .card-h3 {
     font-size: 1.25rem;
