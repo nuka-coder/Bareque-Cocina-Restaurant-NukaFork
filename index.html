@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,13 +44,13 @@
       </div>
 
       <div class="nav-bar hidden">
-          <ul>
-              <li class="nav-bar-btn"><a href="index.html">Home</a></li>
-              <li class="nav-bar-btn"><a href="index.html/#contact">Contacto</a></li>
-              <li class="nav-bar-btn"><a href="index.html/#location">Ubicación</a></li>
-              <li class="nav-bar-btn"><a href="index.html/#reservations">Reservas</a></li>
-              <li class="nav-bar-btn"><a href="menu.html">Menú</a></li>
-          </ul>
+        <ul>
+          <li class="nav-bar-btn"><a href="index.html">Home</a></li>
+          <li class="nav-bar-btn"><a href="index.html/#contact">Contacto</a></li>
+          <li class="nav-bar-btn"><a href="index.html/#location">Ubicación</a></li>
+          <li class="nav-bar-btn"><a href="index.html/#reservations">Reservas</a></li>
+          <li class="nav-bar-btn"><a href="menu.html">Menú</a></li>
+        </ul>
       </div>
     </header>
 
@@ -64,9 +65,9 @@
 
           <div class="nav-links-and-icons">
             <div class="nav-links-desktop">
-              <a href="#Home">Home</a>
-              <a href="#About">About</a>
-              <a href="#Menu">Menu</a>
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="menu.html">Menu</a>
               <a href="#Reservations">Reservations</a>
             </div>
             <div class="social-icons">
@@ -134,7 +135,7 @@
     <section id="culinary-desktop-section" class="culinary-desktop-section">
 
       <div>
-        <img src="images/carbonnara.jpg" alt="carbonnara image">
+        <img class="carbonnaraImg" src="images/carbonnara.jpg" alt="carbonnara image">
       </div>
 
       <div class="culinary-text-div">
@@ -146,7 +147,8 @@
           <div class="cards-borderDiv"></div>
         </div>
 
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iure maxime sapiente rerum veritatis totam id porro, eos, odio doloremque expedita blanditiis quisquam repellat sed! Voluptatem consectetur assumenda, qui quisquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iure maxime sapiente rerum veritatis totam id porro, </p>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iure maxime sapiente rerum veritatis totam id porro, eos, odio doloremque expedita blanditiis quisquam repellat sed! Voluptatem consectetur assumenda, qui
+          quisquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iure maxime sapiente rerum veritatis totam id porro, </p>
         <a class="card-links" href="#About-Us">About Us</a>
       </div>
     </section>
@@ -192,22 +194,26 @@
 
       <div class="menu-btns-containers">
         <div class="menu-btns">
-          <a href="#">
+          <a class="menuObjects slide1" href="#">
             <img class="menu-link-imgs beverages-link" src="images/5.jpg" alt="Beverages Menu Link">
+            <h5 class="menu-btn-title menuTitle0">Beverages</h5>
           </a>
-          <a href="#">
+          <a class="menuObjects slide2" href="#">
             <img class="menu-link-imgs sideDishes-link" src="images/4.jpg" alt="Side Dishes Menu Link">
+            <h5 class="menu-btn-title menuTitle1">Side Dishes</h5>
           </a>
         </div>
 
-          <div class="menu-btns">
+        <div class="menu-btns">
 
-            <a href="#">
-              <img class="menu-link-imgs entrees-link" src="images/2.jpg" alt="Entrees Menu Link">
-            </a>
-            <a href="#">
-              <img class="menu-link-imgs desserts-link" src="images/1.jpg" alt="Desserts Menu Link">
-            </a>
+          <a class="menuObjects slide3" href="#">
+            <img class="menu-link-imgs entrees-link" src="images/2.jpg" alt="Entrees Menu Link">
+            <h5 class="menu-btn-title menuTitle2">Beverages</h5>
+          </a>
+          <a class="menuObjects slide4" href="#">
+            <img class="menu-link-imgs desserts-link" src="images/1.jpg" alt="Desserts Menu Link">
+            <h5 class="menu-btn-title menuTitle3">Beverages</h5>
+          </a>
 
         </div>
       </div>
@@ -261,7 +267,7 @@
         <p>Sunday 10am-1am</p>
       </div>
     </section>
-    <section class="reservation-footer-link">
+    <section class="reservation-footer-section">
       <div class="desktop-reservation-link"><a href="#">Make a Reservation</a>
       </div>
     </section>
