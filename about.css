@@ -5,7 +5,9 @@ BODY {
 H4 {
   font-weight: 200;
 }
-
+/* ===========
+Top Banner beneath navbar
+================== */
 .about-banner {
   background-image: url(images/spice.jpg);
   background-position: center;
@@ -19,36 +21,38 @@ H4 {
   text-align: center;
 }
 
+/* ============
+Main Body Content Begins Here...
+=============== */
+
+/* Section containing all About Content on page */
 .about-content-section {
   margin: 40px 20px 60px;
 }
 
+/* Two invidual Div containers for about text and map api */
 .about-content {
-  margin: 80px 20px;
+  margin: 80px 60px;
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
 .about-imgs {
-  border-radius: 5px;
   height: auto;
   max-width: 90%;
 }
 
-.aboutImg1 {
-  filter: brightness(80%);
-  margin-top: 20px;
-}
-
+/* Bareque restaurant image displayed on medium and smaller screens */
 .aboutImgMedium {
   display: none;
+  filter: brightness(80%);
+  margin-top: 20px;
 }
 
 .culinary-about-div,
 .about-location-div {
   background-color: var(--white);
-  border-radius: 10px;
   box-shadow: 0 0 25px 10px rgba(100, 100, 100, .25);
   text-align: center;
   width: auto;
@@ -56,6 +60,7 @@ H4 {
   padding: 16px;
 }
 
+/* Width set to keep container from shrinking or going to auto size */
 .about-location-div {
   width: 60%;
 }
@@ -66,10 +71,14 @@ H4 {
   align-content: center;
 }
 
+/* White border between footer and main section content */
 .desktop-footer {
   border-top: 10px solid var(--white);
 }
 
+/* ===============
+Media Queries
+================== */
 @media only screen and (max-width: 1030px) {
   H3 {
     font-size: 1rem;
@@ -110,5 +119,12 @@ H4 {
 
   .about-banner {
     margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+/* text should go from row to column for better design flow */
+  .about-visit-text {
+    flex-wrap: wrap;
   }
 }
