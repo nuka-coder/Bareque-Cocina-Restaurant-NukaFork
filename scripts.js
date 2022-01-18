@@ -17,6 +17,22 @@ function mobileMenuClick2() {
   navBarSlideout.removeClass("show");//hide menu links slideout
 };
 
+// change toggle icon colors
+$(".fa-bars").mouseover(menuToggleColorIn);
+$(".fa-bars").mouseout(menuToggleColorOut);
+
+$(".fa-glass-martini-alt").mouseover(menuToggleColorIn);
+$(".fa-glass-martini-alt").mouseout(menuToggleColorOut);
+
+function menuToggleColorIn() {
+    $(".fa-bars").css("color", "#BBA484");
+    $(".fa-glass-martini-alt").css("color", "#BBA484");
+}
+function menuToggleColorOut() {
+    $(".fa-bars").css("color", "#fff");
+    $(".fa-glass-martini-alt").css("color", "#fff");
+}
+
 // Scrolling Animations
 window.addEventListener("scroll", function() {
   let culinaryTextContent = $(".culinary-text-div");
@@ -42,3 +58,18 @@ window.addEventListener("scroll", function() {
 // $('.menuObjects').mouseover(function (event) {
 //   $(".menu-btn-title").css("display", "block");
 // });
+
+// Open Map API
+
+var map = new ol.Map({
+  target: 'map',
+  layers: [
+    new ol.layer.Tile({
+      source: new ol.source.OSM()
+    })
+  ],
+  view: new ol.View({
+    center: ol.proj.fromLonLat([37.41, 8.82]),
+    zoom: 4
+  })
+});

@@ -9,7 +9,7 @@ H4 {
 Top Banner beneath navbar
 ================== */
 .about-banner {
-  background-image: url(images/spice.jpg);
+  background-image: url(images/drink.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,7 +18,7 @@ Top Banner beneath navbar
   margin-bottom: 50px;
   padding: 20px 40px;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 /* ============
@@ -75,10 +75,20 @@ Main Body Content Begins Here...
 .desktop-footer {
   border-top: 10px solid var(--white);
 }
-
+/* ============
+Open Map API
+=============== */
+.map {
+     height: 400px;
+     width: 100%;
+   }
 /* ===============
 Media Queries
 ================== */
+@media only screen and (max-width: 1090px) {
+  .about-location-div .card-h3 {
+    line-height: normal;
+  }
 @media only screen and (max-width: 1030px) {
   H3 {
     font-size: 1rem;
