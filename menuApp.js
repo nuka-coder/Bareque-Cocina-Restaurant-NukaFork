@@ -39,9 +39,19 @@ martini.on("click", () => {
   }
 });
     // change toggle icon colors
-    function menuToggleColor() {
+    $(".fa-bars").mouseover(menuToggleColorIn);
+    $(".fa-bars").mouseout(menuToggleColorOut);
+
+    $(".fa-glass-martini-alt").mouseover(menuToggleColorIn);
+    $(".fa-glass-martini-alt").mouseout(menuToggleColorOut);
+
+    function menuToggleColorIn() {
         $(".fa-bars").css("color", "#BBA484");
         $(".fa-glass-martini-alt").css("color", "#BBA484");
+    }
+    function menuToggleColorOut() {
+        $(".fa-bars").css("color", "#fff");
+        $(".fa-glass-martini-alt").css("color", "#fff");
     }
 
 // Filters
