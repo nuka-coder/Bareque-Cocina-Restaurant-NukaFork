@@ -1,6 +1,7 @@
 /* Fonts */
 @import url("http://fonts.cdnfonts.com/css/book-antiqua");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 /* CSS Variables */
 :root {
   --black: #000;
@@ -11,6 +12,16 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+a {
+  font-family: Merriweather, serif;
+  font-size: 1.75rem;
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
 }
 
 .whole-container {
@@ -35,7 +46,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: column;
 }
 
@@ -171,7 +182,8 @@
 
 .desktop-nav-logo {
   height: 100%;
-  width: 150px;
+  width: 120px;
+  padding: .25em .15em;
 }
 
 .nav-links-desktop {
@@ -232,7 +244,6 @@
   font-size: 0.85em;
   transition: transform 200ms;
   cursor: pointer;
-  font-family: "Book Antiqua", sans-serif;
 }
 
 .selected {
@@ -268,7 +279,7 @@
   background-color: rgba(187, 164, 132, 0.9);
   border: solid 1px #000;
   padding: 0.3em;
-  margin: 30px 20px 0px 20px;
+  margin: 30px 20px 0 20px;
   text-align: center;
   color: #000;
   font-size: 1.7rem;
@@ -314,7 +325,7 @@
 }
 
 .food-sections {
-  margin: 1em 0px 0px 1em;
+  margin: 1em 0 0px 1em;
   width: fit-content;
   color: #000;
   background-color: rgba(187, 164, 132, 0.9);
@@ -352,7 +363,7 @@
 }
 
 .bebidas-price {
-  margin-right: 0px;
+  margin-right: 0;
   margin-left: auto;
   margin-top: 0.7em;
 }
@@ -407,6 +418,7 @@ footer {
   margin-top: 3em;
 }
 
+/*
 .footer-logo {
   width: 100%;
   display: flex;
@@ -452,7 +464,98 @@ footer {
 
 .social-icons a:active {
   color: #fff;
+} */
+
+/*  Desktop Footer */
+
+.copyright {
+  background-color: var(--black);
+  color: var(--white);
+  padding-bottom: 20px;
+  text-align: center;
 }
+.copyright p {
+  margin: 0;
+}
+.desktop-footer {
+  background-color: var(--black);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+}
+
+.desktop-footer h3 {
+  line-height: inherit;
+  margin: 20px 0;
+}
+
+.desktop-footer p {
+  margin: 1rem 0 !important;
+}
+
+.desktop-footer i {
+  margin: 10px 0;
+}
+
+.desktop-footer-logo {
+  background-color: var(--black);
+  height: 100%;
+  width: 150px;
+  padding: 20px 0;
+}
+
+.footer-socials {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.footer-div1,
+.footer-div2,
+.footer-div3 {
+  background-color: var(--black);
+  height: 30vh;
+  color: var(--white);
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Desktop Footer - Reservations link */
+.reservation-footer-section {
+  display: none;
+}
+
+.desktop-reservation-link {
+  background-color: var(--black);
+  padding: 20px 0 50px;
+  text-align: center;
+}
+
+.desktop-reservation-link a {
+  color: var(--white);
+  font-size: 1rem;
+  transition: color .3s linear;
+}
+
+.desktop-reservation-link a:hover {
+  color: var(--lightbrown);
+}
+
+/* Social Icons */
+.ig-footer-icon,
+.fa-phone-alt {
+  font-size: 1.5rem;
+  color: white;
+  transition: color .3s linear;
+}
+
+.footer-socials i:hover {
+  color: var(--lightbrown);
+}
+
 
 /* Media queries for tablet version */
 
@@ -495,6 +598,14 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .desktop-footer {
+    display: flex;
+  }
+
+  .reservation-footer-section {
+    display: block;
+  }
 }
 
 /* Media queries for desktop version */
@@ -510,9 +621,8 @@ footer {
 
   .hidden {
     position: fixed;
-    z-index: 10;
     background-color: transparent;
-    top: 0px;
+    top: 0;
     left: 18em;
     height: fit-content;
     transform: translateY(0px);
@@ -617,7 +727,7 @@ footer {
   }
 
   .filter-btn {
-    margin-top: 0px;
+    margin-top: 0;
   }
   .filter-options {
     margin-top: 2.5em;

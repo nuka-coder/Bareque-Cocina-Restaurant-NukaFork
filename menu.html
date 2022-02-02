@@ -1,529 +1,535 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bareque menu</title>
-    <!-- CSS link -->
-    <link rel="stylesheet" href="menu.css">
-    <!-- Font awesome CDN -->
-    <script src="https://kit.fontawesome.com/87b82da32f.js" crossorigin="anonymous"></script>
-    <!-- ScrollRevealJS animations -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bareque menu</title>
+  <!-- CSS link -->
+  <link rel="stylesheet" href="menu.css">
+  <!-- Font awesome CDN -->
+  <script src="https://kit.fontawesome.com/87b82da32f.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- ScrollRevealJS animations -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
+
 <body>
 
-          <!-- Desktop Header -->
-          <header class="desktop-header">
-            <div>
-              <!-- Desktop Navbar -->
-              <nav class="desktop-nav">
-                <div>
-                  <a href="#"><img class="desktop-nav-logo" src="images/LOGO BAREQUE.png" alt="bareque restaurant logo"></a>
-                </div>
+  <!-- Desktop Header -->
+  <header class="desktop-header">
+    <div>
+      <!-- Desktop Navbar -->
+      <nav class="desktop-nav">
+        <div>
+          <a href="index.html"><img class="desktop-nav-logo" src="images/LOGO BAREQUE.png" alt="bareque restaurant logo"></a>
+        </div>
 
-                <div class="nav-links-and-icons">
-                  <div class="nav-links-desktop">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="menu.html">Menu</a>
-                    <a href="#Reservations">Reservations</a>
-                  </div>
-                  <div class="social-icons">
-                    <a href="https://www.instagram.com/barequecali/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </header>
+        <div class="nav-links-and-icons">
+          <div class="nav-links-desktop">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="#Reservations">Reservations</a>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/barequecali/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-    <div class="whole-container">
+  <div class="whole-container">
 
-        <header class="header">
-            <div class="topnav">
-                <figure class="logo-container">
-                    <a style="font-size: 0;" href="index.html"><img class="nav-logo" src="images/LOGO BAREQUE.png" alt="bareque restaurant logo"></a>
-                </figure>
-                <figure onclick="menuToggleColor();" class="toggle-container bars-icon">
-                    <i class="fas fa-bars"></i>
-                </figure>
-                <figure onclick="menuToggleColor();" class="toggle-container martini">
-                    <i class="fas fa-glass-martini-alt"></i>
-                </figure>
+    <header class="header">
+      <div class="topnav">
+        <figure class="logo-container">
+          <a style="font-size: 0;" href="index.html"><img class="nav-logo" src="images/LOGO BAREQUE.png" alt="bareque restaurant logo"></a>
+        </figure>
+        <figure onclick="menuToggleColor();" class="toggle-container bars-icon">
+          <i class="fas fa-bars"></i>
+        </figure>
+        <figure onclick="menuToggleColor();" class="toggle-container martini">
+          <i class="fas fa-glass-martini-alt"></i>
+        </figure>
 
-            </div>
-            <nav class="nav-bar hidden">
-                <ul>
-                    <li style="margin-top: 16px;" class="nav-bar-btn"><a href="index.html">Home</a></li>
-                    <li class="nav-bar-btn"><a href="index.html/#contact">Contacto</a></li>
-                    <li class="nav-bar-btn"><a href="index.html/#location">Ubicación</a></li>
-                    <li class="nav-bar-btn"><a href="#">Menú</a></li>
-                    <li class="nav-bar-btn"><a href="index.html/#reservations">Reservas</a></li>
+      </div>
+      <nav class="nav-bar hidden">
+        <ul>
+          <li style="margin-top: 16px;" class="nav-bar-btn"><a href="index.html">Home</a></li>
+          <li class="nav-bar-btn"><a href="index.html/#contact">Contacto</a></li>
+          <li class="nav-bar-btn"><a href="index.html/#location">Ubicación</a></li>
+          <li class="nav-bar-btn"><a href="#">Menú</a></li>
+          <li class="nav-bar-btn"><a href="index.html/#reservations">Reservas</a></li>
 
-                </ul>
-            </nav>
-        </header>
+        </ul>
+      </nav>
+    </header>
 
-        <!-- filter-options -->
-            <div class="filter-options">
-                <button class="filter-btn" data-filter="entradas">Entradas</button>
-                <button class="filter-btn" data-filter="plato-fuerte">Platos fuertes</button>
-                <button class="filter-btn" data-filter="postres">Postres</button>
-                <button class="filter-btn" data-filter="bebidas">Bebidas</button>
-            </div>
+    <!-- filter-options -->
+    <div class="filter-options">
+      <button class="filter-btn" data-filter="entradas">Entradas</button>
+      <button class="filter-btn" data-filter="plato-fuerte">Platos fuertes</button>
+      <button class="filter-btn" data-filter="postres">Postres</button>
+      <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+    </div>
 
 
     <section class="menu-container">
 
-            <div class="to-top-btn hide-to-top">
-                <i class="fas fa-arrow-up"></i>
-            </div>
-            <!-- Entradas section-->
-            <h1 class="category-text hd" data-filter="entradas">Entradas</h1>
-            <section class="entradas-section">
-            <article class="menu-item" data-filter="entradas">
+      <div class="to-top-btn hide-to-top">
+        <i class="fas fa-arrow-up"></i>
+      </div>
+      <!-- Entradas section-->
+      <h1 class="category-text hd" data-filter="entradas">Entradas</h1>
+      <section id="Side-Dishes" class="entradas-section">
+        <article class="menu-item" data-filter="entradas">
 
 
-                    <div class="item-info">
-                        <figure class="menu-img-container">
-                            <img src="./Images/patatas-ligues.jpg" alt="Patatas ligues">
-                        </figure>
-                            <h3 class="item-title">Patatas Bareque</h3>
-                            <p class="item-description">Papa amarilla gratinada en cuatro quesos con tocineta</p>
-                            <p class="item-price">$20.000</p>
-                    </div>
-                </article>
-                <article class="menu-item" data-filter="entradas">
-                    <div class="item-info">
-                        <figure class="menu-img-container">
-                            <img src="./Images/patatas-bravas.jpg" alt="Patatas bravas">
-                        </figure>
-                        <h3 class="item-title">Patatas Bravas</h3>
-                        <p class="item-description">Papa amarilla, pico de gallo salsa brava</p>
-                        <p class="item-price">$18.000</p>
-                    </div>
-                </article>
-                <article class="menu-item" data-filter="entradas">
-                    <div class="item-info">
-                        <figure class="menu-img-container">
-                            <img src="./Images/entrada-valluna.jpg" alt="Entrada Valluna">
-                        </figure>
-                        <h3 class="item-title">Valluna</h3>
-                        <p class="item-description">Empanadas, aborrajados, marranitas</p>
-                        <p class="item-price">$15.000</p>
-                    </div>
-                </article>
+          <div class="item-info">
+            <figure class="menu-img-container">
+              <img src="./Images/patatas-ligues.jpg" alt="Patatas ligues">
+            </figure>
+            <h3 class="item-title">Patatas Bareque</h3>
+            <p class="item-description">Papa amarilla gratinada en cuatro quesos con tocineta</p>
+            <p class="item-price">$20.000</p>
+          </div>
+        </article>
+        <article class="menu-item" data-filter="entradas">
+          <div class="item-info">
+            <figure class="menu-img-container">
+              <img src="./Images/patatas-bravas.jpg" alt="Patatas bravas">
+            </figure>
+            <h3 class="item-title">Patatas Bravas</h3>
+            <p class="item-description">Papa amarilla, pico de gallo salsa brava</p>
+            <p class="item-price">$18.000</p>
+          </div>
+        </article>
+        <article class="menu-item" data-filter="entradas">
+          <div class="item-info">
+            <figure class="menu-img-container">
+              <img src="./Images/entrada-valluna.jpg" alt="Entrada Valluna">
+            </figure>
+            <h3 class="item-title">Valluna</h3>
+            <p class="item-description">Empanadas, aborrajados, marranitas</p>
+            <p class="item-price">$15.000</p>
+          </div>
+        </article>
 
-        </section>
+      </section>
 
-        <!-- Platos fuertes section -->
+      <!-- Platos fuertes section -->
 
-        <h1 class="category-text hd" data-filter="plato-fuerte">Platos fuertes</h1>
-        <h2 class="food-sections hd" data-filter="plato-fuerte">Panne Cooks</h2>
-
-
-        <section class="panne-cooks-section">
-            <article class="menu-item" data-filter="plato-fuerte" >
-
-                <!-- Panne cooks-->
-                    <div class="item-info">
-                        <figure class="menu-img-container">
-                            <img src="./Images/pc-camarones.jpg" alt="Panne cook marinero">
-                        </figure>
-                            <h3 class="item-title">Marinero</h3>
-                            <p class="item-description">Langostinos en salsa de la casa, champiñones, tocineta gratinada</p>
-                            <p class="item-price">$30.000</p>
-                    </div>
-                </article>
-                <article class="menu-item" data-filter="plato-fuerte">
-                    <div class="item-info">
-                        <figure class="menu-img-container">
-                            <img src="./Images/pc-mixto.jpeg" alt="Panne cook mixto">
-                        </figure>
-                        <h3 class="item-title">Mixto</h3>
-                        <p class="item-description">Pollo y carne en salsa de la casa, champiñones, tocineta gratinada</p>
-                        <p class="item-price">$25.000</p>
-                    </div>
-                </article>
-                <article class="menu-item" data-filter="plato-fuerte">
-                    <div class="item-info">
-                        <figure class="menu-img-container">
-                            <img src="./Images/pc-carne.png" alt="Panne cook carne">
-                        </figure>
-                        <h3 class="item-title">Carne</h3>
-                        <p class="item-description">Carne en salsa de la casa, champiñones, tocineta gratinada</p>
-                        <p class="item-price">$21.000</p>
-                    </div>
-                </article>
-
-                <article class="menu-item" data-filter="plato-fuerte" >
-                    <div class="item-info">
-                        <figure class="menu-img-container">
-                            <img src="./Images/pc-pollo.jpg" alt="Panne cook pollo">
-                        </figure>
-                        <h3 class="item-title">Pollo</h3>
-                        <p class="item-description">Pollo en salsa de la casa, champiñones, tocineta gratinada</p>
-                        <p class="item-price">$20.000</p>
-                    </div>
-                </article>
-            </section>
-
-                    <!-- Pasta -->
-                <h2 class="food-sections hd" data-filter="plato-fuerte">Pasta (Spaghetti)</h2>
-                <section class="pasta-section">
-                    <article class="menu-item" data-filter="plato-fuerte" >
-                        <div class="item-info">
-                        <figure class="menu-img-container">
-                            <img src="./Images/pasta-di-mare.jpeg" alt="Pasta Di Mare">
-                        </figure>
-                                <h3 class="item-title">Di Mare</h3>
-                                <p class="item-description">Langostinos en salsa de la casa, champiñones, tocineta</p>
-                                <p class="item-price">$30.000</p>
-                        </div>
-                    </article>
-
-                    <article class="menu-item" data-filter="plato-fuerte">
-                        <div class="item-info">
-                            <figure class="menu-img-container">
-                                <img src="./Images/pasta-bareque.jpg" alt="Pasta Bareque">
-                            </figure>
-                            <h3 class="item-title">Bareque</h3>
-                            <p class="item-description">Pollo y carne en salsa de la casa, madurito, tocineta</p>
-                            <p class="item-price">$27.000</p>
-                        </div>
-                    </article>
-                    <article class="menu-item" data-filter="plato-fuerte">
-                        <div class="item-info">
-                            <figure class="menu-img-container">
-                                <img src="./Images/pasta-carbonara.jpg" alt="Pasta Carbonara">
-                            </figure>
-                            <h3 class="item-title">Carbonara</h3>
-                            <p class="item-description">Salsa de la casa, tocineta, pimienta, queso parmesano</p>
-                            <p class="item-price">$26.000</p>
-                        </div>
-                    </article>
-                </section>
-
-                    <!-- Carnes-->
-
-            <h2 class="food-sections reco hd" data-filter="plato-fuerte">Recomendaciones del chef</h2>
-            <section class="carnes-section">
-                <article class="menu-item" data-filter="plato-fuerte">
-                    <div class="item-info">
-                        <figure class="menu-img-container">
-                            <img src="./Images/costilla.jpg" alt="CostillaBBQ">
-                        </figure>
-                            <h3 class="item-title">Costilla especial</h3>
-                            <p class="item-description">Costilla especial en cocción lenta con BBQ de la casa, acompañado de arroz almendrado, ensalada tropical</p>
-                            <p class="item-price">$35.000</p>
-                    </div>
-                    </article>
-                    <article class="menu-item" data-filter="plato-fuerte">
-                        <div class="item-info">
-                            <figure class="menu-img-container">
-                                <img src="./Images/salmon.jpg" alt="Salmón">
-                            </figure>
-                            <h3 class="item-title">Salmón</h3>
-                            <p class="item-description">Filete de salmón con reducción de frutos amarillos, acompañado de pure de papa y ensalada tropical</p>
-                            <p class="item-price">$45.000</p>
-                        </div>
-                    </article>
-                </section>
-
-        </section>
-
-        <section class="bebidas-section hd" data-filter="bebidas">
-            <article class="bebidas-container" data-filter="bebidas">
-
-                <!-- Regular drinks-->
-                <h3 class="bebidas-section-title first">Bebidas</h3>
-                <div class="bebidas-section-container">
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Limonada natural</p>
-                        <p class="bebidas-price">8.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Limonada de coco</p>
-                        <p class="bebidas-price">15.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Limonada de hierbabuena</p>
-                        <p class="bebidas-price">10.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Limonada cerezada</p>
-                        <p class="bebidas-price">10.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Limonada mango biche</p>
-                        <p class="bebidas-price">12.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Gaseosas</p>
-                        <p class="bebidas-description">Coca-Cola, Coca-Cola Zero, Pepsi, Colombiana, Manzana</p>
-                        <p class="bebidas-price">5.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Sodas caleñas</p>
-                        <p class="bebidas-description">Maracuya, Curacao, Lulo, Sandia, Frutos rojos, Coco, Hierbabuena</p>
-                        <p class="bebidas-price">15.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Soda</p>
-                        <p class="bebidas-price">5.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Botella con agua</p>
-                        <p class="bebidas-price">4.000</p>
-                    </div>
-                </div>
-
-                <!-- Infusiones calientes -->
-                <h3 class="bebidas-section-title">Infusiones calientes</h3>
-                <div class="bebidas-section-container">
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Digestiva</p>
-                        <p class="bebidas-description">Té verde y hierbabuena</p>
-                        <p class="bebidas-price">5.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Aromática</p>
-                        <p class="bebidas-description">Manzanilla, jengibre, limón y miel</p>
-                        <p class="bebidas-price">5.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Momento de energía</p>
-                        <p class="bebidas-description">Cardamomo, té verde y jengibre</p>
-                        <p class="bebidas-price">5.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Armonía</p>
-                        <p class="bebidas-description">Manzanilla, anís y menta</p>
-                        <p class="bebidas-price">5.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Momento ligero</p>
-                        <p class="bebidas-description">Menta, manzanilla, hinojo y jengibre</p>
-                        <p class="bebidas-price">5.000</p>
-                    </div>
-                </div>
-
-                <!-- Infusiones frias section -->
-                <h3 class="bebidas-section-title">Infusiones Frias</h3>
-                <div class="bebidas-section-container">
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Frutos tropicales</p>
-                        <p class="bebidas-description">Curcuma, manzana, té verde, mango, maracuya y naranja</p>
-                        <p class="bebidas-price">5.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Frutos del bosque</p>
-                        <p class="bebidas-description">Flor de Jamaica y frambuesa</p>
-                        <p class="bebidas-price">5.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Frutal</p>
-                        <p class="bebidas-description">Mango y coco</p>
-                        <p class="bebidas-price">5.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Frutos rojos</p>
-                        <p class="bebidas-description">Flor de Jamaica, rooibos, hierbabuena, fresa y mora  </p>
-                        <p class="bebidas-price">5.000</p>
-                    </div>
-                </div>
-
-                <!-- Cervezas section -->
-                <h3 class="bebidas-section-title">Cervezas</h3>
-                <div class="bebidas-section-container">
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Heineken</p>
-                        <p class="bebidas-price">10.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Corona</p>
-                        <p class="bebidas-price">10.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Club Colombia</p>
-                        <p class="bebidas-price">8.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Budweiser</p>
-                        <p class="bebidas-price">8.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Aguila Light</p>
-                        <p class="bebidas-price">6.000</p>
-                    </div>
-                </div>
-
-                <!-- Cocteles de autor section -->
-                <h3 class="bebidas-section-title">Cocteles de autor</h3>
-                <div class="bebidas-section-container">
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">La Sucursal del Cielo</p>
-                        <p class="bebidas-description">Roxane, limoncello de la casa, maracuyá</p>
-                        <p class="bebidas-price">40.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">El Caleño</p>
-                        <p class="bebidas-description">Tequila, triple sec, ají en ojuelas</p>
-                        <p class="bebidas-price">30.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Jovita</p>
-                        <p class="bebidas-description">Ginebra, limón, triple sec, frutos rojos</p>
-                        <p class="bebidas-price">30.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Guarilaque</p>
-                        <p class="bebidas-description">Aguardiente, syrup de manzana verde, limón, soda</p>
-                        <p class="bebidas-price">30.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Dama Blanca</p>
-                        <p class="bebidas-description">Ron Blanco, syrup de coco, coco rayado, nuez moscada</p>
-                        <p class="bebidas-price">30.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Shot Frozen</p>
-                        <p class="bebidas-description">Base frutal de la casa, aguardiente y tajín</p>
-                        <p class="bebidas-price">10.000</p>
-                    </div>
-                </div>
-
-                <!-- Cocteles clasicos section -->
-                <h3 class="bebidas-section-title">Cocteles clasicos</h3>
-                <div class="bebidas-section-container">
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Margarita de Mango Biche</p>
-                        <p class="bebidas-description">Tequila, mango biche, triple sec, limón</p>
-                        <p class="bebidas-price">30.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Margarita de Flor de Jamaica</p>
-                        <p class="bebidas-description">Tequila, flor de jamaica, triple sec, limón</p>
-                        <p class="bebidas-price">30.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Margarita</p>
-                        <p class="bebidas-description">Tequila, triple sec, limón</p>
-                        <p class="bebidas-price">25.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Gin Tonic</p>
-                        <p class="bebidas-description">Ginebra,tónica, limón, naranja, especias</p>
-                        <p class="bebidas-price">25.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Gin Tonic Sandia</p>
-                        <p class="bebidas-description">Ginebra,tónica, syrup de sandia, especias</p>
-                        <p class="bebidas-price">25.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Good Father</p>
-                        <p class="bebidas-description">Whisky, amaretto, naranja, cereza</p>
-                        <p class="bebidas-price">25.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Mojito</p>
-                        <p class="bebidas-description">Ron, zumo de limón, hierbabuena, soda</p>
-                        <p class="bebidas-price">25.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Laguna Azul</p>
-                        <p class="bebidas-description">Vodka, triple sec, blue curacao, limón</p>
-                        <p class="bebidas-price">25.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Daiquiri</p>
-                        <p class="bebidas-description">Ron, triple sec, limón</p>
-                        <p class="bebidas-price">25.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Daiquiri Frutos Amarillos</p>
-                        <p class="bebidas-description">Ron, triple sec, limón, maracuyá</p>
-                        <p class="bebidas-price">25.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Daiquiri Tropical</p>
-                        <p class="bebidas-description">Ron,triple sec, syrup de sandia, limón</p>
-                        <p class="bebidas-price">25.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Daiquiri Blue Curacao</p>
-                        <p class="bebidas-description">Ron,triple sec, blue curacao, limón</p>
-                        <p class="bebidas-price">25.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Daiquiri Coco</p>
-                        <p class="bebidas-description">Ron,triple sec, syrup de coco, limón</p>
-                        <p class="bebidas-price">25.000</p>
-                    </div>
-
-                </div>
-
-                <!-- Vinos y sangrias section -->
-                <h3 class="bebidas-section-title">Vinos y sangrias</h3>
-                <div class="bebidas-section-container">
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Copa de Vino Tinto Red Blend</p>
-                        <p class="bebidas-price">20.000</p>
-                    </div>
-                    <div class="bebidas-item menu-item" data-filter="bebidas">
-                        <p class="bebidas-title">Sangria (Vino tinto, rosado o blanco)</p>
-                        <p class="bebidas-price">20.000</p>
-                    </div>
-                </div>
+      <h1 class="category-text hd" data-filter="plato-fuerte">Platos fuertes</h1>
+      <h2 class="food-sections hd" data-filter="plato-fuerte">Panne Cooks</h2>
 
 
-            </article>
-        </section>
-                <!-- Postres section -->
-        <h1 class="category-text hd" data-filter="postres">Postres</h1>
-        <section class="postres-section">
-            <article class="menu-item" data-filter="postres">
-                    <div class="item-info">
-                        <figure class="menu-img-container">
-                            <img src="./Images/postre-brownie-helado.jpg" alt="Brownie con helado">
-                        </figure>
-                            <h3 class="item-title">Brownie con helado</h3>
-                            <p class="item-description">Brownie horneado con helado cremoso de vainilla</p>
-                            <p class="item-price">$10.000</p>
-                </div>
-            </article>
-            <article class="menu-item" data-filter="postres">
-                <div class="item-info">
-                    <figure class="menu-img-container">
-                        <img src="./Images/postre-cheesecake.jpg" alt="Cheesecake">
-                    </figure>
-                    <h3 class="item-title">Cheesecake</h3>
-                    <p class="item-description">Delicioso postre hecho a base crema y queso</p>
-                    <p class="item-price">$15.000</p>
-                </div>
-            </article>
-            <article class="menu-item" data-filter="postres">
-                <div class="item-info">
-                    <figure class="menu-img-container">
-                        <img src="./Images/postre-cortado.jpg" alt="Cortado">
-                    </figure>
-                    <h3 class="item-title">Dulce Cortado</h3>
-                    <p class="item-description">Dulce casero hecho por un artesano</p>
-                    <p class="item-price">$15.000</p>
-                </div>
-            </article>
-    </section>
+      <section id="Entrees" class="panne-cooks-section">
+        <article class="menu-item" data-filter="plato-fuerte">
 
-        </section>
+          <!-- Panne cooks-->
+          <div class="item-info">
+            <figure class="menu-img-container">
+              <img src="./Images/pc-camarones.jpg" alt="Panne cook marinero">
+            </figure>
+            <h3 class="item-title">Marinero</h3>
+            <p class="item-description">Langostinos en salsa de la casa, champiñones, tocineta gratinada</p>
+            <p class="item-price">$30.000</p>
+          </div>
+        </article>
+        <article class="menu-item" data-filter="plato-fuerte">
+          <div class="item-info">
+            <figure class="menu-img-container">
+              <img src="./Images/pc-mixto.jpeg" alt="Panne cook mixto">
+            </figure>
+            <h3 class="item-title">Mixto</h3>
+            <p class="item-description">Pollo y carne en salsa de la casa, champiñones, tocineta gratinada</p>
+            <p class="item-price">$25.000</p>
+          </div>
+        </article>
+        <article class="menu-item" data-filter="plato-fuerte">
+          <div class="item-info">
+            <figure class="menu-img-container">
+              <img src="./Images/pc-carne.png" alt="Panne cook carne">
+            </figure>
+            <h3 class="item-title">Carne</h3>
+            <p class="item-description">Carne en salsa de la casa, champiñones, tocineta gratinada</p>
+            <p class="item-price">$21.000</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-filter="plato-fuerte">
+          <div class="item-info">
+            <figure class="menu-img-container">
+              <img src="./Images/pc-pollo.jpg" alt="Panne cook pollo">
+            </figure>
+            <h3 class="item-title">Pollo</h3>
+            <p class="item-description">Pollo en salsa de la casa, champiñones, tocineta gratinada</p>
+            <p class="item-price">$20.000</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- Pasta -->
+      <h2 class="food-sections hd" data-filter="plato-fuerte">Pasta (Spaghetti)</h2>
+      <section class="pasta-section">
+        <article class="menu-item" data-filter="plato-fuerte">
+          <div class="item-info">
+            <figure class="menu-img-container">
+              <img src="./Images/pasta-di-mare.jpeg" alt="Pasta Di Mare">
+            </figure>
+            <h3 class="item-title">Di Mare</h3>
+            <p class="item-description">Langostinos en salsa de la casa, champiñones, tocineta</p>
+            <p class="item-price">$30.000</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-filter="plato-fuerte">
+          <div class="item-info">
+            <figure class="menu-img-container">
+              <img src="./Images/pasta-bareque.jpg" alt="Pasta Bareque">
+            </figure>
+            <h3 class="item-title">Bareque</h3>
+            <p class="item-description">Pollo y carne en salsa de la casa, madurito, tocineta</p>
+            <p class="item-price">$27.000</p>
+          </div>
+        </article>
+        <article class="menu-item" data-filter="plato-fuerte">
+          <div class="item-info">
+            <figure class="menu-img-container">
+              <img src="./Images/pasta-carbonara.jpg" alt="Pasta Carbonara">
+            </figure>
+            <h3 class="item-title">Carbonara</h3>
+            <p class="item-description">Salsa de la casa, tocineta, pimienta, queso parmesano</p>
+            <p class="item-price">$26.000</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- Carnes-->
+
+      <h2 class="food-sections reco hd" data-filter="plato-fuerte">Recomendaciones del chef</h2>
+      <section class="carnes-section">
+        <article class="menu-item" data-filter="plato-fuerte">
+          <div class="item-info">
+            <figure class="menu-img-container">
+              <img src="./Images/costilla.jpg" alt="CostillaBBQ">
+            </figure>
+            <h3 class="item-title">Costilla especial</h3>
+            <p class="item-description">Costilla especial en cocción lenta con BBQ de la casa, acompañado de arroz almendrado, ensalada tropical</p>
+            <p class="item-price">$35.000</p>
+          </div>
+        </article>
+        <article class="menu-item" data-filter="plato-fuerte">
+          <div class="item-info">
+            <figure class="menu-img-container">
+              <img src="./Images/salmon.jpg" alt="Salmón">
+            </figure>
+            <h3 class="item-title">Salmón</h3>
+            <p class="item-description">Filete de salmón con reducción de frutos amarillos, acompañado de pure de papa y ensalada tropical</p>
+            <p class="item-price">$45.000</p>
+          </div>
+        </article>
+      </section>
 
     </section>
+
+    <section id="Beverages" class="bebidas-section hd" data-filter="bebidas">
+      <article class="bebidas-container" data-filter="bebidas">
+
+        <!-- Regular drinks-->
+        <h3 class="bebidas-section-title first">Bebidas</h3>
+        <div class="bebidas-section-container">
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Limonada natural</p>
+            <p class="bebidas-price">8.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Limonada de coco</p>
+            <p class="bebidas-price">15.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Limonada de hierbabuena</p>
+            <p class="bebidas-price">10.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Limonada cerezada</p>
+            <p class="bebidas-price">10.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Limonada mango biche</p>
+            <p class="bebidas-price">12.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Gaseosas</p>
+            <p class="bebidas-description">Coca-Cola, Coca-Cola Zero, Pepsi, Colombiana, Manzana</p>
+            <p class="bebidas-price">5.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Sodas caleñas</p>
+            <p class="bebidas-description">Maracuya, Curacao, Lulo, Sandia, Frutos rojos, Coco, Hierbabuena</p>
+            <p class="bebidas-price">15.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Soda</p>
+            <p class="bebidas-price">5.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Botella con agua</p>
+            <p class="bebidas-price">4.000</p>
+          </div>
+        </div>
+
+        <!-- Infusiones calientes -->
+        <h3 class="bebidas-section-title">Infusiones calientes</h3>
+        <div class="bebidas-section-container">
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Digestiva</p>
+            <p class="bebidas-description">Té verde y hierbabuena</p>
+            <p class="bebidas-price">5.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Aromática</p>
+            <p class="bebidas-description">Manzanilla, jengibre, limón y miel</p>
+            <p class="bebidas-price">5.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Momento de energía</p>
+            <p class="bebidas-description">Cardamomo, té verde y jengibre</p>
+            <p class="bebidas-price">5.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Armonía</p>
+            <p class="bebidas-description">Manzanilla, anís y menta</p>
+            <p class="bebidas-price">5.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Momento ligero</p>
+            <p class="bebidas-description">Menta, manzanilla, hinojo y jengibre</p>
+            <p class="bebidas-price">5.000</p>
+          </div>
+        </div>
+
+        <!-- Infusiones frias section -->
+        <h3 class="bebidas-section-title">Infusiones Frias</h3>
+        <div class="bebidas-section-container">
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Frutos tropicales</p>
+            <p class="bebidas-description">Curcuma, manzana, té verde, mango, maracuya y naranja</p>
+            <p class="bebidas-price">5.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Frutos del bosque</p>
+            <p class="bebidas-description">Flor de Jamaica y frambuesa</p>
+            <p class="bebidas-price">5.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Frutal</p>
+            <p class="bebidas-description">Mango y coco</p>
+            <p class="bebidas-price">5.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Frutos rojos</p>
+            <p class="bebidas-description">Flor de Jamaica, rooibos, hierbabuena, fresa y mora </p>
+            <p class="bebidas-price">5.000</p>
+          </div>
+        </div>
+
+        <!-- Cervezas section -->
+        <h3 class="bebidas-section-title">Cervezas</h3>
+        <div class="bebidas-section-container">
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Heineken</p>
+            <p class="bebidas-price">10.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Corona</p>
+            <p class="bebidas-price">10.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Club Colombia</p>
+            <p class="bebidas-price">8.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Budweiser</p>
+            <p class="bebidas-price">8.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Aguila Light</p>
+            <p class="bebidas-price">6.000</p>
+          </div>
+        </div>
+
+        <!-- Cocteles de autor section -->
+        <h3 class="bebidas-section-title">Cocteles de autor</h3>
+        <div class="bebidas-section-container">
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">La Sucursal del Cielo</p>
+            <p class="bebidas-description">Roxane, limoncello de la casa, maracuyá</p>
+            <p class="bebidas-price">40.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">El Caleño</p>
+            <p class="bebidas-description">Tequila, triple sec, ají en ojuelas</p>
+            <p class="bebidas-price">30.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Jovita</p>
+            <p class="bebidas-description">Ginebra, limón, triple sec, frutos rojos</p>
+            <p class="bebidas-price">30.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Guarilaque</p>
+            <p class="bebidas-description">Aguardiente, syrup de manzana verde, limón, soda</p>
+            <p class="bebidas-price">30.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Dama Blanca</p>
+            <p class="bebidas-description">Ron Blanco, syrup de coco, coco rayado, nuez moscada</p>
+            <p class="bebidas-price">30.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Shot Frozen</p>
+            <p class="bebidas-description">Base frutal de la casa, aguardiente y tajín</p>
+            <p class="bebidas-price">10.000</p>
+          </div>
+        </div>
+
+        <!-- Cocteles clasicos section -->
+        <h3 class="bebidas-section-title">Cocteles clasicos</h3>
+        <div class="bebidas-section-container">
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Margarita de Mango Biche</p>
+            <p class="bebidas-description">Tequila, mango biche, triple sec, limón</p>
+            <p class="bebidas-price">30.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Margarita de Flor de Jamaica</p>
+            <p class="bebidas-description">Tequila, flor de jamaica, triple sec, limón</p>
+            <p class="bebidas-price">30.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Margarita</p>
+            <p class="bebidas-description">Tequila, triple sec, limón</p>
+            <p class="bebidas-price">25.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Gin Tonic</p>
+            <p class="bebidas-description">Ginebra,tónica, limón, naranja, especias</p>
+            <p class="bebidas-price">25.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Gin Tonic Sandia</p>
+            <p class="bebidas-description">Ginebra,tónica, syrup de sandia, especias</p>
+            <p class="bebidas-price">25.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Good Father</p>
+            <p class="bebidas-description">Whisky, amaretto, naranja, cereza</p>
+            <p class="bebidas-price">25.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Mojito</p>
+            <p class="bebidas-description">Ron, zumo de limón, hierbabuena, soda</p>
+            <p class="bebidas-price">25.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Laguna Azul</p>
+            <p class="bebidas-description">Vodka, triple sec, blue curacao, limón</p>
+            <p class="bebidas-price">25.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Daiquiri</p>
+            <p class="bebidas-description">Ron, triple sec, limón</p>
+            <p class="bebidas-price">25.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Daiquiri Frutos Amarillos</p>
+            <p class="bebidas-description">Ron, triple sec, limón, maracuyá</p>
+            <p class="bebidas-price">25.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Daiquiri Tropical</p>
+            <p class="bebidas-description">Ron,triple sec, syrup de sandia, limón</p>
+            <p class="bebidas-price">25.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Daiquiri Blue Curacao</p>
+            <p class="bebidas-description">Ron,triple sec, blue curacao, limón</p>
+            <p class="bebidas-price">25.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Daiquiri Coco</p>
+            <p class="bebidas-description">Ron,triple sec, syrup de coco, limón</p>
+            <p class="bebidas-price">25.000</p>
+          </div>
+
+        </div>
+
+        <!-- Vinos y sangrias section -->
+        <h3 class="bebidas-section-title">Vinos y sangrias</h3>
+        <div class="bebidas-section-container">
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Copa de Vino Tinto Red Blend</p>
+            <p class="bebidas-price">20.000</p>
+          </div>
+          <div class="bebidas-item menu-item" data-filter="bebidas">
+            <p class="bebidas-title">Sangria (Vino tinto, rosado o blanco)</p>
+            <p class="bebidas-price">20.000</p>
+          </div>
+        </div>
+
+
+      </article>
+    </section>
+    <!-- Postres section -->
+    <h1 class="category-text hd" data-filter="postres">Postres</h1>
+    <section id="Desserts" class="postres-section">
+      <article class="menu-item" data-filter="postres">
+        <div class="item-info">
+          <figure class="menu-img-container">
+            <img src="./Images/postre-brownie-helado.jpg" alt="Brownie con helado">
+          </figure>
+          <h3 class="item-title">Brownie con helado</h3>
+          <p class="item-description">Brownie horneado con helado cremoso de vainilla</p>
+          <p class="item-price">$10.000</p>
+        </div>
+      </article>
+      <article class="menu-item" data-filter="postres">
+        <div class="item-info">
+          <figure class="menu-img-container">
+            <img src="./Images/postre-cheesecake.jpg" alt="Cheesecake">
+          </figure>
+          <h3 class="item-title">Cheesecake</h3>
+          <p class="item-description">Delicioso postre hecho a base crema y queso</p>
+          <p class="item-price">$15.000</p>
+        </div>
+      </article>
+      <article class="menu-item" data-filter="postres">
+        <div class="item-info">
+          <figure class="menu-img-container">
+            <img src="./Images/postre-cortado.jpg" alt="Cortado">
+          </figure>
+          <h3 class="item-title">Dulce Cortado</h3>
+          <p class="item-description">Dulce casero hecho por un artesano</p>
+          <p class="item-price">$15.000</p>
+        </div>
+      </article>
     </section>
 
-</div>
-<footer class="footer">
+    </section>
+
+    </section>
+    </section>
+
+  </div>
+  <!-- <footer class="footer">
     <figure class="footer-logo">
         <img src="./Icons/rLSs6K01.svg" alt="Bareque logo">
     </figure>
@@ -541,12 +547,45 @@
             <a href="mailto:barequecali@gmail.com" target="_BLANK"><i class="far fa-envelope"></i></a>
         </div>
     </section>
-</footer>
+</footer> -->
 
-    <!-- Jquery Scripts  (must be at bottom)-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <section id="desktop-footer" class="desktop-footer">
+    <div class="footer-div1">
+      <h3>Contact</h3>
+      <p>+0 000 000 0000</p>
+      <p>Cali - Valle del cauca - Colombia</p>
+      <p>Horarios de atención: Jueves a Domingo 6:00PM - 1:00 AM</p>
+      <p>email@example.com</p>
+    </div>
+    <div class="footer-div2">
+      <div class="footer-logo-div">
+        <img class="desktop-footer-logo" src="images/LOGO BAREQUE.png" alt="Bareque Restaurant Logo">
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/barequecali/" target="_blank"><i class="fab fa-instagram ig-footer-icon"></i></a>
+        <a href="#"><i class="fas fa-phone-alt"></i></a>
+      </div>
+    </div>
+    <div class="footer-div3">
+      <h3>Hours</h3>
+      <p>Monday - Friday 8am-10pm</p>
+      <p>Saturday 8am-1am</p>
+      <p>Sunday 10am-1am</p>
+    </div>
+  </section>
+  <section class="reservation-footer-section">
+    <div class="desktop-reservation-link"><a href="#">Make a Reservation</a>
+    </div>
+    <div class="copyright">
+      <p>Copyright Bareque Cocina 2022 ©</p>
+    </div>
+  </section>
 
-    <script src="menuApp.js"></script>
+  <!-- Jquery Scripts  (must be at bottom)-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="menuApp.js"></script>
 
 </body>
+
 </html>

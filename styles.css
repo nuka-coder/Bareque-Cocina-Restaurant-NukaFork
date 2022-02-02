@@ -2,7 +2,6 @@
 :root {
   --black: #000;
   --white: #fff;
-  /* --goldenbrown: #5D492C; */
   --lightbrown: #BBA484;
 }
 
@@ -19,7 +18,7 @@ a {
 }
 
 p {
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 html {
@@ -357,7 +356,8 @@ h6 {
 
 .desktop-nav-logo {
   height: 100%;
-  width: 150px;
+  width: 120px;
+  padding: .15em;
 }
 
 .nav-links-desktop {
@@ -698,6 +698,15 @@ h6 {
 }
 
 /*  Desktop Footer */
+.copyright {
+  background-color: var(--black);
+  color: var(--white);
+  padding-bottom: 20px;
+  text-align: center;
+}
+.copyright p {
+  margin: 0;
+}
 .desktop-footer {
   background-color: var(--black);
   display: none;

@@ -28,6 +28,7 @@ Main Body Content Begins Here...
 /* Section containing all About Content on page */
 .about-content-section {
   margin: 40px 20px 60px;
+  padding-bottom: 2rem;
 }
 
 /* Two invidual Div containers for about text and map api */
