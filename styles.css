@@ -983,10 +983,6 @@ h6 {
     margin: 0;
   }
 
-  .landing-statement-text {
-    margin-left: 80px;
-  }
-
   .landing-body {
     width: auto;
     flex-direction: row;
