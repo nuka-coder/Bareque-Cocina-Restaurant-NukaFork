@@ -162,6 +162,14 @@ h6 {
   width: 25%;
 }
 
+/* Map */
+
+.mobile-map {
+  height: auto;
+  width: 80vw;
+  text-align: center;
+}
+
 /* Buttons */
 .mobile-btns {
   border-radius: 10px;
